@@ -1,7 +1,3 @@
 # PersonalSportCalendary
 
-El problema que se pretende solucionar con este proyecto es el siguiente:
-
-Esta aplicacion va dirigida a personas muy ocupadas en su dia a dia como madres, padres, empresarios, etc. Adultos en general que no consiguen organizar su tiempo libre y termina convirtiendose en tiempo ocioso. Ésas personas pueden mantenerse en forma desde casa a traves de esta aplicacion que se pretende crear. 
-
-En definitiva, el problema principal podria solucionarse a traves de una aplicacion que te diseñe tu plan deportivo con los materiales y tiempo del que dispones.
+Las madres, padres y personas adultas con una alta carga de trabajo diario, enfrentan el reto de equilibrar sus múltiples responsabilidades (trabajo, cuidado de sus hijos, desplazamientos,etc). A pesar de sus agendas ocupadas, desean aprovechar los pocos momentos libres que tienen durante la semana para mantenerse en forma sin salir de casa, evitando así perder tiempo en desplazamientos hacia un gimnasio.
