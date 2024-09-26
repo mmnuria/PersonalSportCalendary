@@ -12,6 +12,6 @@ Es importante entender que, el problema es fundamentalmente el mantenerse activo
 
 ## Configuración del repositorio
 
-En [configuración](./docs/config-repo) se detalla paso a paso lo que se ha requerido realizar para la correcta configuracion de las claves públicas y privadas y su posterior subida a GitHub (la pública). Además de los comandos necesarios para establecer correctamente mi nombre de usuario y correo.
+En [configuración](./docs/config-repo.md) se detalla paso a paso lo que se ha requerido realizar para la correcta configuracion de las claves públicas y privadas y su posterior subida a GitHub (la pública). Además de los comandos necesarios para establecer correctamente mi nombre de usuario y correo.
 
 Finalmente la [clave publica](./docs/ClavePublica.png), el [nombre y correo](./docs/NombreyCorreo.png) se puede ver que se ha configurado correctamente en GitHub.
