@@ -13,28 +13,27 @@ El objetivo es desarrollar una solución que permita a los usuarios realizar eje
 Basándonos en este contexto inicial, se definieron las siguientes **historias de usuario** para abordar las necesidades específicas de los usuarios:
 
 1. [HU001 Selección de tiempo disponible para el ejercicio](./HU001.png) : 
-
-Descripción:
-
-    Como usuario, con una agenda ocupada, quiero poder seleccionar el tiempo que tengo disponible (por ejemplo, 10, 20 o 30 minutos) y los días de la semana, para que la aplicación me proporcione una rutina de ejercicios adecuada a ese tiempo, de manera que pueda mantenerme físicamente activo sin afectar mis otras responsabilidades.
+>
+>Descripción:
+>
+>Como usuario, con una agenda ocupada, quiero poder seleccionar el tiempo que tengo disponible (por ejemplo, 10, 20 o 30 minutos) y los días de >la semana, para que la aplicación me proporcione una rutina de ejercicios adecuada a ese tiempo, de manera que pueda mantenerme físicamente activo sin afectar mis otras responsabilidades.
 
 2. [HU002 Rutinas adaptadas al equipamiento disponible en casa](./HU002.png) : 
 
-Descripción: 
-
-    Como usuario, no quiero perder tiempo en ir a gimnasios para mantenerme activo, por lo que poseo de equipamiento deportivo en casa (pesas, bandas elásticas, esterilla, etc.), quiero poder indicar qué materiales tengo para tener rutinas que incluyan el uso de estos equipos, de manera que aproveche al máximo los recursos disponibles.
+>Descripción: 
+>
+>Como usuario, no quiero perder tiempo en ir a gimnasios para mantenerme activo, por lo que poseo de equipamiento deportivo en casa (pesas, bandas elásticas, esterilla, etc.), quiero poder indicar qué materiales tengo para tener rutinas que incluyan el uso de estos equipos, de manera que aproveche al máximo los recursos disponibles.
 
 
 3. [HU003 Inclusión de ejercicios de estiramiento](./HU003.png): 
 
-Descipción:
-
-    Como persona que quiere mejorar su salud general, quiero que se me sugiera ejercicios de estiramiento al principio y al final de cada rutina, para relajar los músculos y evitar lesiones.
+>Descipción:
+>
+>Como persona que quiere mejorar su salud general, quiero que se me sugiera ejercicios de estiramiento al principio y al final de cada rutina, para relajar los músculos y evitar lesiones.
 
 > 💡 **Información importante:**
 >
 > Se puede ver las asignaciones en los links anteriores  al label y [milestone](../config-milestones.md) correspondiente al que pertenecen cada una de estas HUs.
-
 
 ## Resumen
 
