@@ -4,8 +4,8 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
 
 1. Accedemos al apartado de los [milestones](./images/milestones.png) y seleccionamos ["New milestone"](./images/new-milestone.png).
 
-2. Añadimos título y descripción necesaria para explicar como vamos a llevar a cabo la resolución de cada uno de nuestros issues creados, de forma que quede algo así:
-    - [Milestone 0: Entendimiento del Problema y Planificación Inicial](./images/milestone0.png) 
+2. Añadimos título y descripción necesaria para explicar como vamos a llevar acabo la resolución de cada uno de nuestros issues creados, de forma que quede algo así:
+    - [Milestone 0: Entendimiento del problema y planificación inicial](./images/milestone0.png) 
         >
         >Este hito se centra en **comprender las necesidades de los usuarios y establecer un plan inicial para el desarrollo de la aplicación**. Se realizará un análisis de las historias de usuario para garantizar que todos los requisitos están claros.
         >
@@ -19,7 +19,7 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >Todos los miembros del equipo comprenden las historias de usuario y están alineados con los objetivos del proyecto.
 
 
-    - [Milestone 1: Implementación de la Selección de Tiempo (HU001)](./images/milestone1.png)
+    - [Milestone 1: Implementación de la selección de tiempo (HU001)](./images/milestone1.png)
 
         >En este hito se implementará la funcionalidad que permite a los usuarios **seleccionar el tiempo que tienen disponible para ejercitarse, tanto el tiempo y los días** y generar una rutina adaptada a esa duración.
         >
@@ -35,7 +35,7 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >El usuario puede seleccionar un rango de tiempo en minutos, la cantidad de días que puede realizar ejercicio y recibir una rutina adecuada a la duración elegida.
         Las rutinas generadas son funcionales y se adaptan a la disponibilidad del usuario.
 
-    - [Milestone 2: Implementación de Rutinas Basadas en Equipamiento (HU002)](./images/milestone2.png)
+    - [Milestone 2: Implementación de rutinas basadas en equipamiento (HU002)](./images/milestone2.png)
 
         >Este hito se enfocará en **permitir a los usuarios indicar qué material deportivo tienen disponible** o en caso de no tenerlo, haya una opción que lo recoja y generar rutinas que incorporen esos equipos o sin ellos.
         >
@@ -49,7 +49,7 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >
         >El usuario puede indicar el material disponible y recibe rutinas que lo utilizan. Si no hay material, la aplicación ofrece ejercicios con peso corporal.
 
-    - [Milestone 3: Inclusión de Ejercicios de Estiramiento (HU003)](./images/milestone3.png)
+    - [Milestone 3: Inclusión de ejercicios de estiramiento (HU003)](./images/milestone3.png)
 
         >Este hito incluirá la implementación de la funcionalidad para **sugerir ejercicios de estiramiento al inicio y al final** de cada rutina de ejercicios.
         >
