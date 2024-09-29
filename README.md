@@ -18,5 +18,13 @@ Es importante entender que, el problema es fundamentalmente el **mantenerse acti
 
 En [configuración](./docs/config-repo.md) se detalla paso a paso lo que se ha requerido realizar para la correcta configuracion de las claves públicas y privadas y su posterior subida a GitHub (la pública). Además de los comandos necesarios para establecer correctamente mi nombre de usuario y correo.
 
-Finalmente la [clave publica](./docs/ClavePublica.png), el [nombre y correo](./docs/NombreyCorreo.png) se puede ver que se ha configurado correctamente en GitHub.
+Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y correo](./docs/images/NombreyCorreo.png) se puede ver que se ha configurado correctamente en GitHub.
+
+## Creación de issues y milestones:
+
+- Para la creación de los issues he seguido una serie de pasos desarrollados en ["config-issues"](./docs/config-issues.md)
+- Para la creación de los milestones se desallora en ["config-milestones"](./docs/config-milestones.md)
+
+Todas estas configuraciones se han llevado acabo para poder completar el objetivo 1, en el que vamos desarrollado las [HUs](./docs/HUs/HUs.md) (historias de usuario) para el establecimiento de los problemas a resolver poco a poco, hasta llegar a resolver el problema en su conjunto.
+
 
