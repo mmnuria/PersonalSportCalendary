@@ -6,6 +6,7 @@ Madres, padres y personas adultas con una alta carga de trabajo diario se enfren
 
 Los largos desplazamientos hasta un gimnasio y las altas esperas para el uso de las maquinas especificas ocasionan una perdida de tiempo enorme del cual no disponen.
 
+
 Estos adultos necesitan una solucion a este problema, es decir, como conciliar sus vidas personales con un mantenimiento fisico adecuado y suficiente para mantener buen estado de salud, es por ello que, necesitan emplear el menor tiempo posible (segun el que dispongan cada dia) sin emplear tiempos ociosos de desplazamientos innecesarios, **llevandolo a cabo desde casa**, con o sin materiales deportivos, pero adaptado a su disponibilidad diaria.
 
 Es importante entender que, el problema es fundamentalmente el **mantenerse activos fisicamente para una correcta salud**, sin requerimientos especificos en grupos musculares, pero siempre adaptado al tiempo que disponen.
@@ -14,9 +15,11 @@ Es importante entender que, el problema es fundamentalmente el **mantenerse acti
 >
 > Puedes encontrar más información en el archivo [noticias](./docs/news.md) sobre las diferentes consecuencias y riesgos para la salud que conlleva el no realizar suficiente actividad fisica.
 
+
 ## Configuración del repositorio
 
 En [configuración](./docs/config-repo.md) se detalla paso a paso lo que se ha requerido realizar para la correcta configuracion de las claves públicas y privadas y su posterior subida a GitHub (la pública). Además de los comandos necesarios para establecer correctamente mi nombre de usuario y correo.
+
 
 Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y correo](./docs/images/NombreyCorreo.png) se puede ver que se ha configurado correctamente en GitHub.
 
@@ -26,5 +29,6 @@ Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y corr
 - Para la creación de los milestones se desallora en ["config-milestones"](./docs/config-milestones.md)
 
 Todas estas configuraciones se han llevado acabo para poder completar el objetivo 1, en el que vamos desarrollado las [HUs](./docs/HUs/HUs.md) (historias de usuario) para el establecimiento de los problemas a resolver poco a poco, hasta llegar a resolver el problema en su conjunto.
+
 
 
