@@ -5,18 +5,23 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
 1. Accedemos al apartado de los [milestones](./images/milestones.png) y seleccionamos ["New milestone"](./images/new-milestone.png).
 
 2. Añadimos título y descripción necesaria para explicar como vamos a llevar acabo la resolución de cada uno de nuestros issues creados, de forma que quede algo así:
-    - [Milestone 0: Entendimiento del problema y planificación inicial](./images/milestone0.png) 
+    - [Milestone 0: Planificación inicial](./images/milestone0.png) 
+        
         >
-        >Este hito se centra en **comprender las necesidades de los usuarios y establecer un plan inicial para el desarrollo de la aplicación**. Se realizará un análisis de las historias de usuario para garantizar que todos los requisitos están claros.
+        >Analizar las historias de usuario para identificar y definir los **elementos clave del dominio** que serán utilizados en el desarrollo del MVP. Este hito se centrará en estructurar los conceptos del dominio de acuerdo a las necesidades del negocio, usando **Domain-Driven Design (DDD)** como metodología.
         >
-        >Entregables:
+        >**Entregables:**
         >
-        >- Documentación sobre las necesidades y problemas de los usuarios.
-        >- Revisión de las historias de usuario y criterios de aceptación.
+        >- **Definición de las entidades principales**, objetos de valor y agregados, basados en el análisis de las historias de usuario.
+        >- **Modelo inicial del dominio** que represente las relaciones entre las entidades y otros elementos clave.
+        >- Revisión de las **historias de usuario** con criterios de aceptación claros, alineados con el modelo de dominio.
         >
-        >Criterios de éxito:
+        >**Criterios de éxito:**
         >
-        >Todos los miembros del equipo comprenden las historias de usuario y están alineados con los objetivos del proyecto.
+        >- El **modelo del dominio** está definido y comprende las entidades clave, objetos de valor, agregados y sus relaciones.
+        >- Todos los elementos del dominio han sido **validados por el revisor** y son comprensibles para el equipo.
+        >- Las historias de usuario están alineadas con los elementos del dominio y los criterios de aceptación son claros.
+        >- El milestone se dará por completado cuando el **modelo del dominio** sea validado y esté listo para guiar el desarrollo del MVP.
 
 
     - [Milestone 1: Implementación de la selección de tiempo (HU001)](./images/milestone1.png)

@@ -12,32 +12,32 @@ El objetivo es desarrollar una solución que permita a los usuarios realizar eje
 
 Basándonos en este contexto inicial, se definieron las siguientes **historias de usuario** para abordar las necesidades específicas de los usuarios:
 
-1. [HU001 Como usuario con múltiples responsabilidades, quiero que mis necesidades relacionadas con el ejercicio y la falta de tiempo sean comprendidas y bien documentadas, para poder mantenerme activo sin sacrificar otras áreas importantes de mi vida: ](./HU001.png)
+1. [**HU001:** Gestión de ejercicio para personas con falta de tiempo:](./HU001.png)
 
->
->Descripción:
->
->Como usuario con una vida ocupada, quiero asegurarme de que se entienden bien mis limitaciones de tiempo y las dificultades que enfrento para mantenerme físicamente activo. Esto me permitirá recibir soluciones que se adapten a mi realidad, ayudándome a equilibrar mi vida personal, laboral y mi bienestar físico.
+    >
+    >Descripción:
+    >
+    >Como usuario con una vida ocupada, quiero asegurarme de que se entienden bien mis limitaciones de tiempo y las dificultades que enfrento para mantenerme físicamente activo. Esto me permitirá recibir soluciones que se adapten a mi realidad, ayudándome a equilibrar mi vida personal, laboral y mi bienestar físico.
 
 
 2. [HU002 Selección de tiempo disponible para el ejercicio](./HU002.png) : 
 >
->Descripción:
->
->Como usuario, con una agenda ocupada, quiero poder seleccionar el tiempo que tengo disponible (por ejemplo, 10, 20 o 30 minutos) y los días de >la semana, para que la aplicación me proporcione una rutina de ejercicios adecuada a ese tiempo, de manera que pueda mantenerme físicamente activo sin afectar mis otras responsabilidades.
+    >Descripción:
+    >
+    >Como usuario, con una agenda ocupada, quiero poder seleccionar el tiempo que tengo disponible (por ejemplo, 10, 20 o 30 minutos) y los días de >la semana, para que la aplicación me proporcione una rutina de ejercicios adecuada a ese tiempo, de manera que pueda mantenerme físicamente activo sin afectar mis otras responsabilidades.
 
 3. [HU003 Rutinas adaptadas al equipamiento disponible en casa](./HU003.png) : 
 
->Descripción: 
->
->Como usuario, no quiero perder tiempo en ir a gimnasios para mantenerme activo, por lo que poseo de equipamiento deportivo en casa (pesas, bandas elásticas, esterilla, etc.), quiero poder indicar qué materiales tengo para tener rutinas que incluyan el uso de estos equipos, de manera que aproveche al máximo los recursos disponibles.
+    >Descripción: 
+    >
+    >Como usuario, no quiero perder tiempo en ir a gimnasios para mantenerme activo, por lo que poseo de equipamiento deportivo en casa (pesas, bandas elásticas, esterilla, etc.), quiero poder indicar qué materiales tengo para tener rutinas que incluyan el uso de estos equipos, de manera que aproveche al máximo los recursos disponibles.
 
 
 4. [HU004 Inclusión de ejercicios de estiramiento](./HU004.png): 
 
->Descipción:
->
->Como persona que quiere mejorar su salud general, quiero que se me sugiera ejercicios de estiramiento al principio y al final de cada rutina, para relajar los músculos y evitar lesiones.
+    >Descipción:
+    >
+    >Como persona que quiere mejorar su salud general, quiero que se me sugiera ejercicios de estiramiento al principio y al final de cada rutina, para relajar los músculos y evitar lesiones.
 
 > 💡 **Información importante:**
 >
