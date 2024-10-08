@@ -5,7 +5,7 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
 1. Accedemos al apartado de los [milestones](./images/milestones.png) y seleccionamos ["New milestone"](./images/new-milestone.png).
 
 2. Añadimos título y descripción necesaria para explicar como vamos a llevar acabo la resolución de cada uno de nuestros issues creados, de forma que quede algo así:
-    - [Milestone 0: Planificación inicial](./images/milestone0.png) 
+    - [Milestone 0: Modelo del problema](./images/milestone0.png) 
         
         >
         >Analizar las historias de usuario para identificar y definir los **elementos clave del dominio** que serán utilizados en el desarrollo del MVP. Este hito se centrará en estructurar los conceptos del dominio de acuerdo a las necesidades del negocio, usando **Domain-Driven Design (DDD)** como metodología.
