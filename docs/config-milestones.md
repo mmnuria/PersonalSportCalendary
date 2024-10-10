@@ -2,13 +2,10 @@
 
 En el momento en el que ya tengamos los issues creados podemos proceder a la creación de los llamados milestones. Estos son objetivos que nos vamos a ir marcando poco a poco para ir resolviendo las historias de usuario de uno a uno.
 
-1. Accedemos al apartado de los [milestones](./images/milestones.png) y seleccionamos ["New milestone"](./images/new-milestone.png).
 
-2. Añadimos título y descripción necesaria para explicar como vamos a llevar acabo la resolución de cada uno de nuestros issues creados, de forma que quede algo así:
-    - [Milestone 0: Modelo del problema](./images/milestone0.png) 
-        
-        >
-        >Analizar las historias de usuario para identificar y definir los **elementos clave del dominio** que serán utilizados en el desarrollo del MVP. Este hito se centrará en estructurar los conceptos del dominio de acuerdo a las necesidades del negocio, usando **Domain-Driven Design (DDD)** como metodología.
+1. **Milestone 0: Modelo del problema (HUOO1)**
+    
+    >Analizar las historias de usuario para identificar y definir los **elementos clave del dominio** que serán utilizados en el desarrollo del MVP. Este hito se centrará en estructurar los conceptos del dominio de acuerdo a las necesidades del negocio, usando **Domain-Driven Design (DDD)** como metodología.
         >
         >**Entregables:**
         >
@@ -24,9 +21,9 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >- El milestone se dará por completado cuando el **modelo del dominio** sea validado y esté listo para guiar el desarrollo del MVP.
 
 
-    - [Milestone 1: Implementación de la selección de tiempo (HU001)](./images/milestone1.png)
+2. **Milestone 1: Implementación de la selección de tiempo (HU002)**
 
-        >En este hito se implementará la funcionalidad que permite a los usuarios **seleccionar el tiempo que tienen disponible para ejercitarse, tanto el tiempo y los días** y generar una rutina adaptada a esa duración.
+    >En este hito se implementará la funcionalidad que permite a los usuarios **seleccionar el tiempo que tienen disponible para ejercitarse, tanto el tiempo y los días** y generar una rutina adaptada a esa duración.
         >
         >Entregables:
         >
@@ -40,9 +37,9 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >El usuario puede seleccionar un rango de tiempo en minutos, la cantidad de días que puede realizar ejercicio y recibir una rutina adecuada a la duración elegida.
         Las rutinas generadas son funcionales y se adaptan a la disponibilidad del usuario.
 
-    - [Milestone 2: Implementación de rutinas basadas en equipamiento (HU002)](./images/milestone2.png)
+3. **Milestone 2: Implementación de rutinas basadas en equipamiento (HU003 y HUOO4)**
 
-        >Este hito se enfocará en **permitir a los usuarios indicar qué material deportivo tienen disponible** o en caso de no tenerlo, haya una opción que lo recoja y generar rutinas que incorporen esos equipos o sin ellos.
+    >Este hito se enfocará en **permitir a los usuarios indicar qué material deportivo tienen disponible** o en caso de no tenerlo, haya una opción que lo recoja y generar rutinas que incorporen esos equipos o sin ellos.
         >
         >Entregables:
         >
@@ -54,9 +51,9 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >
         >El usuario puede indicar el material disponible y recibe rutinas que lo utilizan. Si no hay material, la aplicación ofrece ejercicios con peso corporal.
 
-    - [Milestone 3: Inclusión de ejercicios de estiramiento (HU003)](./images/milestone3.png)
+4. **Milestone 3: Inclusión de ejercicios de estiramiento (HU005)**
 
-        >Este hito incluirá la implementación de la funcionalidad para **sugerir ejercicios de estiramiento al inicio y al final** de cada rutina de ejercicios.
+    >Este hito incluirá la implementación de la funcionalidad para **sugerir ejercicios de estiramiento al inicio y al final** de cada rutina de ejercicios.
         >
         >Entregables:
         >
@@ -68,6 +65,3 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
         >
         >La aplicación ofrece estiramientos antes y después de cada rutina.
         Los estiramientos son relevantes para los ejercicios realizados y son fáciles de ejecutar en casa.
-
-3. Por último debemos asegurarnos que, tras haber creado cada uno de los milestones anteriores deben de estar relacionados con el [issue](./config-issues.md) correspondiente (HU001, HU002 o HU003).
-
