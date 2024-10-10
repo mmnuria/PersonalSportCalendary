@@ -6,8 +6,8 @@ En el momento en el que ya tengamos los issues creados podemos proceder a la cre
 1. **Milestone 0: Modelo del problema (HUOO1)**
     
     >Analizar las historias de usuario para identificar y definir los **elementos clave del dominio** que serán utilizados en el desarrollo del MVP. Este hito se centrará en estructurar los conceptos del dominio de acuerdo a las necesidades del negocio, usando **Domain-Driven Design (DDD)** como metodología.
-        >
-        >**Entregables:**
+    >
+    >**Entregables:**
         >
         >- **Definición de las entidades principales**, objetos de valor y agregados, basados en el análisis de las historias de usuario.
         >- **Modelo inicial del dominio** que represente las relaciones entre las entidades y otros elementos clave.
