@@ -16,8 +16,15 @@ Basándonos en este contexto inicial, se definieron las siguientes **historias d
     
 >Descripción:
     >
-    >Como usuario con una vida ocupada, tengo dificultades para encontrar tiempo para hacer ejercicio, lo que afecta mi bienestar físico. Necesito soluciones que se adapten a mi tiempo limitado y a mis otras responsabilidades, para poder incorporar de manera efectiva la actividad física en mi día a día sin sacrificar otras áreas importantes de mi vida.
-  
+    >Aquí te dejo una versión en la que el enfoque está en el problema que enfrenta el usuario:
+    > Soy una persona adulta con una carga de trabajo alta y responsabilidades familiares. Tengo problemas para mantenerme físicamente activo porque no dispongo de tiempo suficiente para ir al gimnasio ni para esperar el uso de máquinas. Esto afecta mi salud, y necesito una forma de hacer ejercicio sin perder tiempo en desplazamientos innecesarios.
+    >
+    > Necesito una solución que me permita hacer ejercicio **desde casa**, ajustado al tiempo que tenga cada día, sin necesidad de equipos especiales, y que me ayude a mantener mi bienestar general sin centrarme en objetivos específicos de entrenamiento. En concreto quiero poder: 
+    > 
+    >   - Realizar rutinas de ejercicio cortas y flexibles (de 5 a 30 minutos), según mi disponibilidad.
+    >   - Tener ejercicios que se puedan hacer sin equipos o con materiales básicos.
+    >   - Toda la rutina de actividades se puedan realizar en casa y en espacios reducidos.
+
 2. **HU002: Falta de tiempo para planificar el ejercicio**
 
 >Descripción:
