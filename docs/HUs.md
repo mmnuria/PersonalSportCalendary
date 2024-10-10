@@ -21,9 +21,9 @@ Basándonos en este contexto inicial, se definieron las siguientes **historias d
     >
     > Necesito una solución que me permita hacer ejercicio **desde casa**, ajustado al tiempo que tenga cada día, sin necesidad de equipos especiales, y que me ayude a mantener mi bienestar general sin centrarme en objetivos específicos de entrenamiento. En concreto quiero poder: 
     > 
-    >   - Realizar rutinas de ejercicio cortas y flexibles (de 5 a 30 minutos), según mi disponibilidad.
+    >   - Realizar un conjunto de ejercicios cortos y flexibles (de 5 a 30 minutos), según mi disponibilidad.
     >   - Tener ejercicios que se puedan hacer sin equipos o con materiales básicos.
-    >   - Toda la rutina de actividades se puedan realizar en casa y en espacios reducidos.
+    >   - Que todos los ejercicos se puedan realizar en casa y en espacios reducidos.
 
 2. **HU002: Falta de tiempo para planificar el ejercicio**
 
