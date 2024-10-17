@@ -6,7 +6,6 @@ Madres, padres y personas adultas con una alta carga de trabajo diario se enfren
 
 Los largos desplazamientos hasta un gimnasio y las altas esperas para el uso de las maquinas especificas ocasionan una perdida de tiempo enorme del cual no disponen.
 
-
 Estos adultos necesitan una solucion a este problema, es decir, como conciliar sus vidas personales con un mantenimiento fisico adecuado y suficiente para mantener buen estado de salud, es por ello que, necesitan emplear el menor tiempo posible (segun el que dispongan cada dia) sin emplear tiempos ociosos de desplazamientos innecesarios, **llevándolo a cabo desde casa**, con o sin materiales deportivos, pero adaptado a su disponibilidad diaria.
 
 Es importante entender que, el problema es fundamentalmente el **mantenerse activos fisicamente para una correcta salud**, sin requerimientos especificos en grupos musculares, pero siempre adaptado al tiempo que disponen.
