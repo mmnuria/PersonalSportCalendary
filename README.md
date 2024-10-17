@@ -19,3 +19,9 @@ Es importante entender que, el problema es fundamentalmente el **mantenerse acti
 
 En [configuración](./docs/config-repo.md) se detalla paso a paso lo que se ha requerido realizar para la correcta configuracion de las claves públicas y privadas y su posterior subida a GitHub (la pública). Además de los comandos necesarios para establecer correctamente mi nombre de usuario y correo.
 Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y correo](./docs/images/NombreyCorreo.png) se puede ver que se ha configurado correctamente en GitHub.
+
+## Definición de HUs, milestones y user-journey:
+
+- [Historias de usuario](./docs/HUs.md)
+- [Milestones](./docs/config-milestones.md)
+- [user-journey](./docs/user-journey.md)
