@@ -13,3 +13,6 @@ David es un ejecutivo de una empresa tecnológica que trabaja muchas horas frent
 ### Teresa
 Teresa es una mujer que, debido a la pandemia, se ha quedado sin acceso a su gimnasio habitual. Tiene algunas bandas elásticas en casa, pero no sabe cómo organizarse para entrenar con ellas. Siente que está perdiendo forma física y le gustaría encontrar una manera de aprovechar el material que tiene sin necesidad de adquirir más equipos o asistir a un gimnasio.
 
+> 💡 **Información adicional:**
+>
+> [Explicación de qué es una rutina de ejercicios](./rutina-ejercicios.md)

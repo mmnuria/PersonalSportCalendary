@@ -1,6 +1,6 @@
 ### **Definición de las rutinas de ejercicios**
 
-Cada **rutina** es una combinación de ejercicios individuales, previamente definidos y estructurados en el sistema.
+Cada **rutina** es una combinación de ejercicios individuales, previamente definidos y estructurados en el sistema. Estas rutinas integrarán ejercicios para mejorar la salud del usuario enfocándose en una combinación de grupos musculares necesarios para incrementar en la flexibilidad, resistencia, fuerza, cardiovasculares, calentamiento y estiramiento.
 
 Cada **ejercicio** debe tener los siguientes atributos en la base de datos:
     - **Nombre del ejercicio**
@@ -25,3 +25,5 @@ Las **rutinas** se generan de forma dinámica en función de las preferencias de
     - **Duración:** Ejemplo, 3 series de 10 sentadillas.
     - **Instrucciones:** Instrucciones paso a paso con imágenes o videos.
     - **Materiales necesarios:** Detalle de cada uno de los materiales a necesitar.
+
+Cada rutina debe contener al menos 1 ejercicio de cada uno de los grupos musculares necesario para asegurarnos de su efectividad sobre la mejora de salud del usuario. En caso de disponer poco tiempo el usuario, se puede ofrecer una reducción de ejercicios pero SIEMPRE debe de aparecer ejercicios de calentamiento al principio y estiramientos al final de cada rutina.
