@@ -1,14 +1,15 @@
 ## Milestones
 
-### [M0] Modelo del problema
+### [M0] Extracción y organización de información para la base de datos
 
-+ **Descripción:** Para poder comenzar con la resolución del problema (HU001), es necesario contar con una base estructurada de datos con la que apoyarte para la extracción de los ejercicios específicos para cada [rutina.](./rutina-ejercicios.md)
++ **Descripción:** Este milestone se centra en obtener y organizar la información relevante sobre ejercicios y [rutinas](./rutina-ejercicios.md) de manera que permita crear una base de datos inicial específica para el problema (HU001). Este paso es fundamental para tener una estructura de datos clara que respalde la generación de rutinas personalizadas, de acuerdo con las necesidades de los usuarios.
 
-+ **Producto mínimamente viable:** Obtener fuentes de datos de las que se pueda extraer la información para poder modelar (elementos claves de dominio) el problema de forma correcta.
++ **Producto mínimamente viable:** Una base de datos inicial que contenga una estructura organizada de ejercicios clasificados según objetivos clave (flexibilidad, resistencia, fuerza, cardiovascular, calentamiento y estiramiento). La información debe extraerse de fuentes de datos confiables y relevantes, y organizarse de manera que facilite la posterior creación de rutinas específicas.
 
 + **Criterio de Validación**:
-  - Especificación de las diferentes bases de datos en las que se ha apoyado.
-  - Construir una base de datos estructurada organizada en ejercicios que se clasifiquen en función del objetivo con el que se realiza, es decir, mejorar flexibilidad, resistencia, fuerza, cardiovasculares, calentamiento y estiramiento.
+  - Documento que liste las fuentes de datos revisadas y utilizadas para construir la base de datos.
+  - Base de datos estructurada que clasifique los ejercicios según el objetivo principal para el cual están diseñados, con atributos como nombre, duración, instrucciones, materiales necesarios e intensidad.
+  - Validación del modelo de datos mediante consultas de prueba que permitan extraer ejercicios según los objetivos definidos.
 
 ---
 
