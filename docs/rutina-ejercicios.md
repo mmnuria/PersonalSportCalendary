@@ -3,10 +3,11 @@
 Cada **rutina** es una combinación de ejercicios individuales, previamente definidos y estructurados en el sistema. Estas rutinas integrarán ejercicios para mejorar la salud del usuario enfocándose en una combinación de grupos musculares necesarios para incrementar en la flexibilidad, resistencia, fuerza, cardiovasculares, calentamiento y estiramiento.
 
 Cada **ejercicio** debe tener los siguientes atributos en la base de datos:
-    - **Nombre del ejercicio**
-    - **Duración/Series**
-    - **Instrucciones detalladas**
-    - **Materiales necesarios**
+
+- **Nombre del ejercicio**
+- **Duración/Series**
+- **Instrucciones detalladas**
+- **Materiales necesarios**
     
 Las **rutinas** se generan de forma dinámica en función de las preferencias del usuario, permitiendo flexibilidad en tiempo y equipo. A continuación desarrollo el paso a paso desde la aplicación:
 
