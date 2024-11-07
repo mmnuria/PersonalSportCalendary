@@ -4,7 +4,7 @@
 
 Soy Ana, gerente de proyectos en una empresa de tecnología y madre de dos niños pequeños, **quiero** poder realizar ejercicio que se adapte automáticamente a mi disponibilidad diaria y me sugiera rutinas personalizadas basadas en el tiempo que dispongo, para optimizar mis pequeños momentos libres de manera que pueda **mejorar mi resistencia y energía** sin tener que planificar manualmente cada rutina ni revisar múltiples páginas de ejercicios.
 
-Cuando intento buscar rutinas en internet, aparecen múltiples páginas de ejercicios pero, ninguna se adaptan a las necesidades que yo tengo, por eso, necesito una solución para no perder mi tiempo en la busqueda de los ejercicios en cada una de estas páginas.
+Cuando intento buscar rutinas en internet, aparecen múltiples páginas de ejercicios pero, ninguna se adaptan a las necesidades que yo tengo, por eso, necesito una solución para no perder mi tiempo en la busqueda de los ejercicios en cada una de estas páginas. Esas páginas son por ejemplo: [MuscleWiki](https://musclewiki.com/) y [FitnessBlender](https://www.fitnessblender.com/)
 
 ---
 
