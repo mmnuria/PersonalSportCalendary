@@ -1,4 +1,5 @@
-package healthScheduler
+package package health_scheduler
+
 
 type Turno struct {
     Nombre TipoTurno

@@ -1,4 +1,4 @@
-package healthScheduler
+package health_scheduler
 
 type Asignacion struct {
     Empleado Empleado

@@ -1,4 +1,4 @@
-package healthScheduler
+package health_scheduler
 
 type Empleado struct {
     Nombre       string

@@ -1,3 +1,5 @@
+package health_scheduler
+
 type TipoTurno string
 
 const (
