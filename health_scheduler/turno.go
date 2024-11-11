@@ -1,10 +1,9 @@
-package package health_scheduler
-
+package health_scheduler
 
 type Turno struct {
-    Nombre TipoTurno
-    Inicio string
-    Fin    string
+	Nombre TipoTurno
+	Inicio string
+	Fin    string
 }
 
 func NuevoTurno(nombre TipoTurno) *Turno {
@@ -24,9 +23,9 @@ func NuevoTurno(nombre TipoTurno) *Turno {
 	}
 
 	return &Turno{
-        Nombre: nombre,
-        Inicio: inicio,
-        Fin:    fin,
-    }
-        
+		Nombre: nombre,
+		Inicio: inicio,
+		Fin:    fin,
+	}
+
 }
