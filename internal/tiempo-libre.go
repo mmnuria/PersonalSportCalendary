@@ -16,7 +16,21 @@ type IntervaloHorario struct { //Intervalos de tiempo libre (formato de los stri
 	HorarioFin    string
 }
 
+func NewIntervaloHorario(horarioInicio, horarioFin string) IntervaloHorario {
+	return IntervaloHorario{
+		HorarioInicio: horarioInicio,
+		HorarioFin:    horarioFin,
+	}
+}
+
 type TiempoLibre struct {
 	Dias     []Dia                      //Días como enum
 	Horarios map[Dia][]IntervaloHorario //Mapeamos los horarios de disponibilidad a su día correspondiente
+}
+
+func NewTiempoLibre(dias []Dia, horarios map[Dia][]IntervaloHorario) TiempoLibre {
+	return TiempoLibre{
+		Dias:     dias,
+		Horarios: horarios,
+	}
 }
