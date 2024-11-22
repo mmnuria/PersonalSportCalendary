@@ -1,17 +1,15 @@
 package PersonalSportCalendary
 
 type Rutina struct {
-	Nombre     string   //Nombre de la rutina
-	Tiempo     int      //Duración en minutos
-	Ejercicios []string //Instrucciones detalladas sobre los ejercicios que componen la rutina y sus repeticiones
-	Materiales []string //Material necesario para realizar cada ejercicio de la rutina
+	Nombre     string      //Nombre de la rutina
+	Tiempo     int         //Duración en minutos
+	Ejercicios []Ejercicio //Instrucciones detalladas sobre los ejercicios que componen la rutina y sus repeticiones
 }
 
-func NewRutina(nombre string, tiempo int, ejercicios []string, materiales []string) Rutina {
+func NewRutina(nombre string, tiempo int, ejercicios []Ejercicio, materiales []string) Rutina {
 	return Rutina{
 		Nombre:     nombre,
 		Tiempo:     tiempo,
 		Ejercicios: ejercicios,
-		Materiales: materiales,
 	}
 }
