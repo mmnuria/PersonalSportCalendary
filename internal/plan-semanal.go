@@ -1,24 +1,13 @@
 package PersonalSportCalendary
 
-type PlanIntervalo struct {
-	IntervaloTiempo IntervaloTiempo
-	Rutina          Rutina
-}
-
-func NewPlanIntervalo(intervaloTiempo IntervaloTiempo, rutina Rutina) PlanIntervalo {
-	return PlanIntervalo{
-		IntervaloTiempo: intervaloTiempo,
-		Rutina:          rutina,
-	}
-}
-
-// relaciona un tiempo libre con una rutina
 type PlanSemanal struct {
-	PlanIntervalos []PlanIntervalo
+	TiempoLibre TiempoLibre
+	Rutinas     []Rutina
 }
 
-func NewPlanSemanal(planIntervalo []PlanIntervalo) PlanSemanal {
+func NewPlanSemanal(tiempoLibre TiempoLibre, rutinas []Rutina) PlanSemanal {
 	return PlanSemanal{
-		PlanIntervalos: planIntervalo,
+		TiempoLibre: tiempoLibre,
+		Rutinas:     rutinas,
 	}
 }
