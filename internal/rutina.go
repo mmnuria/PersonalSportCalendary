@@ -3,23 +3,12 @@ package PersonalSportCalendary
 type Material int //enum de materiales
 
 const (
-	Barbell = iota
-	Dumbbells
-	Bodyweight
-	Machine
-	MedicineBall
-	Kettlebells
-	Stretches
-	Cables
-	Band
-	Plate
+	Barra = iota
+	Mancuerna
+	BalonMedicinal
+	Kettlebell
+	BandaElastica
 	TRX
-	Yoga
-	BosuBall
-	Vitruvian
-	Cardio
-	SmithMachine
-	Recovery
 )
 
 type Rutina struct {
