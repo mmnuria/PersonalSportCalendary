@@ -1,8 +1,8 @@
 package PersonalSportCalendary
 
-type Tipo int //Enum de grupos musculares (obtenidos a partir de musclewiki.com)
+type TipoEjercicio int //Enum de tipos de ejercicios
 const (
-	Flexibilidad Tipo = iota
+	Flexibilidad TipoEjercicio = iota
 	Resistencia
 	Fuerza
 	Cardiovasculares
@@ -18,9 +18,19 @@ const (
 )
 
 type Ejercicio struct {
-	Nombre        string     //Nombre del ejercicio
-	Descripcion   string     //Descripción del ejercicio
-	MinsEstimados int        //Tiempo estimado en minutos para realizar el ejercicio
-	Tipo          Tipo       //Grupo muscular al que pertenece el ejercicio
-	Intensidad    Intensidad //Intensidad del ejercicio
+	Nombre        string        //Nombre del ejercicio
+	Descripcion   string        //Descripción del ejercicio
+	MinsEstimados int           //Tiempo estimado en minutos para realizar el ejercicio
+	TipoEjercicio TipoEjercicio //Grupo muscular al que pertenece el ejercicio
+	Intensidad    Intensidad    //Intensidad del ejercicio
+}
+
+func NewEjercicio(nombre string, descripcion string, minsEstimados int, tipoEjercicio TipoEjercicio, intensidad Intensidad) Ejercicio {
+	return Ejercicio{
+		Nombre:        nombre,
+		Descripcion:   descripcion,
+		MinsEstimados: minsEstimados,
+		TipoEjercicio: tipoEjercicio,
+		Intensidad:    intensidad,
+	}
 }
