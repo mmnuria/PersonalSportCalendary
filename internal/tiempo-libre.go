@@ -12,7 +12,7 @@ type TiempoLibre struct {
 
 // NewTiempoLibre crea una nueva instancia de TiempoLibre.
 func NewTiempoLibre(diasLibresSemanales uint, tiempoLibreDiario uint) (TiempoLibre, error) {
-	if tiempoLibreDiario > 1440 {
+	if tiempoLibreDiario <= 0 || tiempoLibreDiario > 1440 {
 		return TiempoLibre{}, fmt.Errorf("el tiempo debe estar entre 1 y 1440 minutos, recibido: %d", tiempoLibreDiario)
 	}
 	if diasLibresSemanales > 7 {
