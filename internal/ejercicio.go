@@ -2,23 +2,31 @@ package PersonalSportCalendary
 
 import "fmt"
 
+// Ejercicio representa un ejercicio que un usuario puede realizar.
+// - Nombre: Nombre del ejercicio.
+// - Descripcion: Descripción detallada del ejercicio.
+// - MinsEstimados: Tiempo estimado en minutos para realizar el ejercicio.
+// - ClaseEjercicio: Clase de ejercicio a realizar entre: Flexibilidad, Fuerza, Cardiovasculares, Calentamiento, Estiramiento.
+// - Intensidad: Intensidad del ejercicio entre: Baja, Media, Alta.
 type Ejercicio struct {
-	Nombre         string //Nombre del ejercicio
-	Descripcion    string //Descripción del ejercicio
-	MinsEstimados  int    //Tiempo estimado en minutos para realizar el ejercicio
-	ClaseEjercicio string //Clase de ejercicio a realizar entre: Flexibilidad, Fuerza, Cardiovasculares, Calentamiento, Estiramiento
-	Intensidad     string //Intensidad del ejercicio entre: Baja, Media, Alta
+	Nombre         string
+	Descripcion    string
+	MinsEstimados  uint
+	ClaseEjercicio string
+	Intensidad     string
 }
 
-func NewEjercicio(nombre string, descripcion string, minsEstimados int, claseEjercicio string, intensidad string) (Ejercicio, error) {
-	//Comprobación de clase de ejercicio
+// NewEjercicio crea una nueva instancia de Ejercicio.
+func NewEjercicio(nombre string, descripcion string, minsEstimados uint, claseEjercicio string, intensidad string) (Ejercicio, error) {
+	if minsEstimados > 1440 {
+		return Ejercicio{}, fmt.Errorf("el tiempo debe estar entre 1 y 1440 minutos, recibido: %d", minsEstimados)
+	}
 	switch string(claseEjercicio) {
 	case "Flexibilidad", "Fuerza", "Cardiovasculares", "Calentamiento", "Estiramiento":
 		break
 	default:
 		return Ejercicio{}, fmt.Errorf("wjercicio inválido: %v", claseEjercicio)
 	}
-	//Comprobación de intensidad
 	switch string(intensidad) {
 	case "Baja", "Media", "Alta":
 		break
