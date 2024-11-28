@@ -1,15 +1,6 @@
 package PersonalSportCalendary
 
-type Material int //enum de materiales
-
-const (
-	Barra = iota
-	Mancuerna
-	BalonMedicinal
-	Kettlebell
-	BandaElastica
-	TRX
-)
+import "fmt"
 
 type Rutina struct {
 	Nombre     string      //Nombre de la rutina
@@ -24,5 +15,23 @@ func NewRutina(nombre string, tiempo int, ejercicios []Ejercicio, materiales []M
 		Tiempo:     tiempo,
 		Ejercicios: ejercicios,
 		Materiales: materiales,
+	}
+}
+
+type Material string //enum de materiales
+const (
+	Peso          = "Peso"
+	BandaElastica = "Banda Elastica"
+	Cuerda        = "Cuerda"
+	Esterilla     = "Esterilla"
+	Pelota        = "Pelota"
+)
+
+func NewMaterial(material string) (Material, error) {
+	switch Material(material) {
+	case Peso, BandaElastica, Cuerda, Esterilla, Pelota:
+		return Material(material), nil
+	default:
+		return "", fmt.Errorf("Material inválido: %v", material)
 	}
 }
