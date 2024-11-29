@@ -2,6 +2,9 @@ package PersonalSportCalendary
 
 import "fmt"
 
+// ListaRutinas guarda el conjunto de rutinas que un usuario puede realizar.
+type ListaRutinas []Rutina
+
 // Rutina representa una rutina de ejercicios que un usuario puede realizar.
 // - Nombre: Nombre de la rutina.
 // - Tiempo: Duración en minutos de la rutina (máximo 1440, un día).

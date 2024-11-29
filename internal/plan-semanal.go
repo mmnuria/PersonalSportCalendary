@@ -1,17 +1,20 @@
 package PersonalSportCalendary
 
-// PlanSemanal representa un plan semanal de rutinas y tiempo libre.
-// - TiempoLibre: Tiempo libre del usuario durante la semana.
-// - Rutinas: Rutinas de ejercicios que el usuario dispone para realizar durante la semana.
-type PlanSemanal struct {
-	TiempoLibre TiempoLibre
-	Rutinas     []Rutina
-}
+import "fmt"
+
+// PlanSemanal representa el plan semanal de rutinas de un usuario con un determinado tiempo libre.
+// Se comprueba que haya una rutina por día y que coincida la duración de cada rutina con el tiempo libre diario.
+type PlanSemanal []Rutina
 
 // NewPlanSemanal crea una nueva instancia de PlanSemanal.
-func NewPlanSemanal(tiempoLibre TiempoLibre, rutinas []Rutina) PlanSemanal {
-	return PlanSemanal{
-		TiempoLibre: tiempoLibre,
-		Rutinas:     rutinas,
+func NewPlanSemanal(tiempoLibre TiempoLibre, rutinas []Rutina) (PlanSemanal, error) {
+	if tiempoLibre.DiasLibresSemanales != uint(len(rutinas)) {
+		return PlanSemanal{}, fmt.Errorf("el número de días libres (%d) no coincide con el número de rutinas (%d)", tiempoLibre.DiasLibresSemanales, len(rutinas))
 	}
+	for i, rutina := range rutinas {
+		if rutina.TiempoDuracion != tiempoLibre.TiempoLibreDiario {
+			return PlanSemanal{}, fmt.Errorf("la duración de la rutina %d (%d) no coincide con el tiempo libre diario (%d)", i, rutina.TiempoDuracion, tiempoLibre.TiempoLibreDiario)
+		}
+	}
+	return PlanSemanal(rutinas), nil
 }
