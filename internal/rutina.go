@@ -3,7 +3,7 @@ package PersonalSportCalendary
 import "fmt"
 
 // ListaRutinas guarda el conjunto de rutinas que un usuario puede realizar.
-type ListaRutinas []Rutina
+var ListaRutinas []Rutina
 
 // Rutina representa una rutina de ejercicios que un usuario puede realizar.
 // - Nombre: Nombre de la rutina.

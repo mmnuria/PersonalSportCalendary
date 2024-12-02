@@ -3,7 +3,7 @@ package PersonalSportCalendary
 import "fmt"
 
 // ListaPlanesSemanales guarda cada uno se los planes semanales de los usuarios.
-type ListaPlanesSemanales []PlanSemanal
+var ListaPlanesSemanales []PlanSemanal
 
 // PlanSemanal representa el plan semanal de rutinas de un usuario con un determinado tiempo libre.
 // Se comprueba que haya una rutina por día y que coincida la duración de cada rutina con el tiempo libre diario.

@@ -3,7 +3,7 @@ package PersonalSportCalendary
 import "fmt"
 
 // ListaEjecicios guarda el conjunto de ejercicios que un usuario puede realizar.
-type ListaEjercicios []Ejercicio
+var ListaEjercicios []Ejercicio
 
 // Ejercicio representa un ejercicio que un usuario puede realizar.
 // - Nombre: Nombre del ejercicio.
