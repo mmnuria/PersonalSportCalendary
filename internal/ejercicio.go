@@ -2,6 +2,9 @@ package PersonalSportCalendary
 
 import "fmt"
 
+// ListaEjecicios guarda el conjunto de ejercicios que un usuario puede realizar.
+type ListaEjercicios []Ejercicio
+
 // Ejercicio representa un ejercicio que un usuario puede realizar.
 // - Nombre: Nombre del ejercicio.
 // - Descripcion: Descripción detallada del ejercicio.
@@ -25,7 +28,7 @@ func NewEjercicio(nombre string, descripcion string, minsEstimados uint, claseEj
 	case "Flexibilidad", "Fuerza", "Cardiovasculares", "Calentamiento", "Estiramiento":
 		break
 	default:
-		return Ejercicio{}, fmt.Errorf("wjercicio inválido: %v", claseEjercicio)
+		return Ejercicio{}, fmt.Errorf("Ejercicio inválido: %v", claseEjercicio)
 	}
 	switch string(intensidad) {
 	case "Baja", "Media", "Alta":
