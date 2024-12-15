@@ -25,3 +25,7 @@ Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y corr
 - [Historias de usuario](./docs/HUs.md)
 - [Milestones](./docs/config-milestones.md)
 - [user-journey](./docs/user-journey.md)
+
+## Selección del gestor de dependencias
+
+Para una información mucho más completa y detallada puede leer el siguiente [documento](./docs/gestor_dependencias.md).
