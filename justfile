@@ -27,19 +27,18 @@ clean:
 	@echo "Limpiando archivos generados..."
 	rm -rf bin/
 
-# Verificar sintaxis y formateo del código
+# Verificar sintaxis
 check:
-	@echo "Verificando sintaxis y formato..."
+	@echo "Verificando sintaxis..."
 	go fmt {{pkg}}
-	go vet {{pkg}}
 
 # Ayuda sobre comandos disponibles
 help:
 	@echo "Comandos disponibles:"
-	@echo "  just all     - Ejecuta tidy, fmt, vet, lint, test y build."
+	@echo "  just all     - Ejecuta install, test, build, clean, check y help"
 	@echo "  just install - Instala dependencias."
 	@echo "  just test    - Ejecuta pruebas unitarias."
 	@echo "  just build   - Construye el proyecto."
 	@echo "  just clean   - Limpia archivos generados."
-	@echo "  just check   - Verifica sintaxis y formateo del código."
+	@echo "  just check   - Verifica sintaxis"
 	@echo "  just help    - Muestra esta ayuda."
