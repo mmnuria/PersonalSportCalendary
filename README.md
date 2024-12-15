@@ -29,3 +29,8 @@ Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y corr
 ## Selección del gestor de dependencias
 
 Para una información mucho más completa y detallada puede leer el siguiente [documento](./docs/gestor_dependencias.md).
+
+## Selección del gestor de tareas.
+
+En el siguiente [archivo](./docs/gestor_tareas.md) puede encontrar una amplia explicación de cada uno de los gestores de tareas para un proyecto en go, además de un riguroso estudio para la elección de la más apropiada para este proyecto.
+
