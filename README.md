@@ -34,3 +34,8 @@ Para una información mucho más completa y detallada puede leer el siguiente [d
 
 En el siguiente [archivo](./docs/gestor_tareas.md) puede encontrar una amplia explicación de cada uno de los gestores de tareas para un proyecto en go, además de un riguroso estudio para la elección de la más apropiada para este proyecto.
 
+De las diferentes tareas una de la más necesarias es la comprobación de la sintaxis:
+
+```
+just check
+```
