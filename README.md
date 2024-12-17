@@ -28,7 +28,7 @@ Finalmente la [clave publica](./docs/images/ClavePublica.png), el [nombre y corr
 
 ## Selección del gestor de dependencias
 
-Para una información mucho más completa y detallada puede leer el siguiente [documento](./docs/gestor_dependencias.md).
+El gestor de dependencias escogido es `go.mod` para una información mucho más completa y detallada puede leer el siguiente [documento](./docs/gestor_dependencias.md).
 
 ## Selección del gestor de tareas.
 
