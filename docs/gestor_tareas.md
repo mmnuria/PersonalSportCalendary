@@ -4,8 +4,8 @@
 
 Para garantizar un flujo de trabajo eficiente y mantener la calidad del proyecto, es crucial seleccionar una herramienta que sea adecuada para el desarrollo con Go. Los criterios seleccionados son: 
 
-- **Actualización constante y minimización de deuda técnica**: La herramienta debe contar con soporte activo y actualizaciones regulares que aseguren su compatibilidad, mientras cada funcionalidad se diseña para evitar configuraciones complejas y reducir riesgos de mantenimiento a largo plazo.    
-- **Documentación y comunidad**: Es importante que la herramienta tenga una base sólida de documentación y soporte comunitario para resolver problemas y extender funcionalidades.  
+- **Actualización constante y minimización de deuda técnica**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.    
+- **Documentación y soporte comunitario**: Se evaluará por la cantidad de issues resueltos en el repositorio oficial durante el último mes y la disponibilidad de ejemplos claros en la documentación oficial.
 
 ## **Análisis de opciones disponibles**
 
@@ -22,7 +22,7 @@ Just ofrece una alternativa más sencilla y enfocada, ideal para proyectos Go. S
 ### **Task**  
 Task utiliza un enfoque basado en archivos YAML para definir tareas. Aunque es potente, esta configuración puede ser innecesariamente compleja para proyectos más simples.  
 
-[Documentación oficial de Task](https://taskfile.dev/) 
+[Documentación oficial de Task](https://github.com/adriancooney/Taskfile) 
 
 ### **Mage**  
 Mage destaca por permitir la definición de tareas directamente en Go, lo que elimina la necesidad de aprender una sintaxis diferente. Sin embargo, su falta de actualizaciones recientes puede ser un inconveniente.   
@@ -39,17 +39,17 @@ Inspirado en Mage, Sage permite automatizar tareas dentro de proyectos en Go. Se
 Para seleccionar la herramienta más adecuada en la gestión de tareas en este proyecto, evaluaremos y compararemos cada una de las opciones disponibles con base en los criterios establecidos previamente:
 
 - **Evaluación de actualización constante y minimización de deuda técnica**:  
-   - **Just** es la opción más sólida, ya que cuenta con actualizaciones constantes, una comunidad activa que asegura su desarrollo y soporte, y una sintaxis simple que evita configuraciones complejas, facilitando el mantenimiento.  
-   - **Make** cumple con la minimización de deuda técnica gracias a su flujo eficiente y sintaxis sencilla, aunque carece de soporte activo, lo que podría dificultar su integración a largo plazo.  
+   - **Just** es la opción más sólida, ya que cuenta con actualizaciones constantes.
+   - **Make** cumple con la minimización de deuda técnica gracias a su flujo eficiente, aunque las pocas actualizaciones aumentarán la deuda técnica.  
    - **Task** presenta un desarrollo más modesto y, aunque funcional, el uso de archivos YAML puede aumentar los costos de mantenimiento si no se gestionan adecuadamente.  
    - **Mage** no ha recibido actualizaciones recientes, lo que supone un riesgo de deuda técnica futura, y su enfoque puede generar configuraciones complicadas.  
-   - **Sage** es relativamente nueva, con menor madurez y soporte, y su sintaxis podría introducir complejidad adicional en proyectos grandes.  
-   
-- Respecto a la **documentación y comunidad**  
-   - **Just:** tiene una buena documentación y una comunidad activa, lo que facilita la solución de problemas y la extensión de la herramienta.  
-   - **Make:** tiene una documentación más extensa, pero su comunidad es menos dinámica en términos de soporte para Go.  
-   - **Task** y **Mage** tienen comunidades más pequeñas, lo que puede dificultar la resolución rápida de problemas.  
-   - **Sage:** al ser más nueva, tiene una comunidad en crecimiento.
+   - **Sage** es relativamente nueva, con menor madurez, lo que podría introducir complejidad adicional en proyectos grandes.   
+
+- **Documentación y soporte comunitario**
+  - **Just y Mage**: La comunidad es más activa, con un número considerable de *issues* cerrados. La documentación es extensa y proporciona ejemplos claros que ayudan en la implementación y solución de problemas.  
+  - **Make**: El repositorio no muestra actividad reciente en la resolución de *issues*, lo que sugiere una comunidad inactiva. Además, la documentación es limitada y no incluye ejemplos claros, dificultando su uso.  
+  - **Task**: La comunidad es pequeña, con pocas *issues* cerradas en el último mes. La documentación también es limitada y carece de ejemplos claros, lo que puede dificultar la resolución de problemas. 
+  - **Sage**: Al ser relativamente nuevo, el repositorio tiene una comunidad en crecimiento, con pocos *issues* resueltos hasta ahora. La documentación aún se está desarrollando, lo que limita la disponibilidad de ejemplos claros y soporte inmediato.  
 
 ### Elección y justificación
 
