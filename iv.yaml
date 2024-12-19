@@ -1,2 +1,5 @@
 lenguaje: Go
 entidad: /internal/plan-semanal.go
+automatizar:
+  fichero: justfile
+  orden: just
