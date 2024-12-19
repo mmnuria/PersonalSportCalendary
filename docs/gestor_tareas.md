@@ -5,7 +5,7 @@
 Para garantizar un flujo de trabajo eficiente y mantener la calidad del proyecto, es crucial seleccionar una herramienta que sea adecuada para el desarrollo con Go. Los criterios seleccionados son: 
 
 - **Actualización constante y minimización de deuda técnica**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.    
-- **Documentación y soporte comunitario**: Se evaluará por la cantidad de issues resueltos en el repositorio oficial durante el último mes y la disponibilidad de ejemplos claros en la documentación oficial.
+- **Soporte comunitario**: Se evaluará por la cantidad de issues resueltos en el repositorio oficial durante el último mes.
 
 ## **Análisis de opciones disponibles**
 
@@ -46,10 +46,10 @@ Para seleccionar la herramienta más adecuada en la gestión de tareas en este p
    - **Sage** es relativamente nueva, con menor madurez, lo que podría introducir complejidad adicional en proyectos grandes.   
 
 - **Documentación y soporte comunitario**
-  - **Just y Mage**: La comunidad es más activa, con un número considerable de *issues* cerrados. La documentación es extensa y proporciona ejemplos claros que ayudan en la implementación y solución de problemas.  
-  - **Make**: El repositorio no muestra actividad reciente en la resolución de *issues*, lo que sugiere una comunidad inactiva. Además, la documentación es limitada y no incluye ejemplos claros, dificultando su uso.  
-  - **Task**: La comunidad es pequeña, con pocas *issues* cerradas en el último mes. La documentación también es limitada y carece de ejemplos claros, lo que puede dificultar la resolución de problemas. 
-  - **Sage**: Al ser relativamente nuevo, el repositorio tiene una comunidad en crecimiento, con pocos *issues* resueltos hasta ahora. La documentación aún se está desarrollando, lo que limita la disponibilidad de ejemplos claros y soporte inmediato.  
+  - **Just y Mage**: La comunidad es más activa, con un número considerable de *issues* cerrados.
+  - **Make**: El repositorio no muestra actividad reciente en la resolución de *issues*, lo que sugiere una comunidad inactiva. 
+  - **Task**: La comunidad es pequeña, con pocas *issues* cerradas en el último mes. 
+  - **Sage**: Al ser relativamente nuevo, el repositorio tiene una comunidad en crecimiento, con pocos *issues* resueltos hasta ahora. 
 
 ### Elección y justificación
 
