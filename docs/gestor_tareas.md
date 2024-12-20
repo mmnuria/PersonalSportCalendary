@@ -11,7 +11,7 @@ Para garantizar un flujo de trabajo eficiente y mantener la calidad del proyecto
 ### **Make**  
 Make es una herramienta ampliamente utilizada para la automatización de tareas, soportada de forma robusta en muchos lenguajes y entornos. Su uso en proyectos Go puede ser más complicado debido a la necesidad de una estructura más rigurosa y la gestión explícita de dependencias. 
 
-[Documentación oficial de Make](https://github.com/wkusnierczyk/make?tab=readme-ov-file)
+[Documentación oficial de Make](http://git.savannah.gnu.org/cgit/make.git)
 
 ### **Just**  
 Just ofrece una alternativa más sencilla y enfocada, ideal para proyectos Go. Su diseño simple y directo favorece la definición de tareas sin complicar la estructura ni requerir el manejo explícito de dependencias, lo que lo convierte en una opción más accesible.
