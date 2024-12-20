@@ -5,7 +5,6 @@
 Para garantizar un flujo de trabajo eficiente y mantener la calidad del proyecto, es crucial seleccionar una herramienta que sea adecuada para el desarrollo con Go. Los criterios seleccionados son: 
 
 - **Actualización constante y minimización de deuda técnica**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.    
-- **Soporte comunitario**: Se evaluará por la cantidad de issues resueltos en el repositorio oficial durante el último mes.
 
 ## **Análisis de opciones disponibles**
 
@@ -44,12 +43,6 @@ Para seleccionar la herramienta más adecuada en la gestión de tareas en este p
    - **Task** presenta un desarrollo más modesto y, aunque funcional, el uso de archivos YAML puede aumentar los costos de mantenimiento si no se gestionan adecuadamente.  
    - **Mage** no ha recibido actualizaciones recientes, lo que supone un riesgo de deuda técnica futura, y su enfoque puede generar configuraciones complicadas.  
    - **Sage** es relativamente nueva, con menor madurez, lo que podría introducir complejidad adicional en proyectos grandes.   
-
-- **Documentación y soporte comunitario**
-  - **Just y Mage**: La comunidad es más activa, con un número considerable de *issues* cerrados.
-  - **Make**: El repositorio no muestra actividad reciente en la resolución de *issues*, lo que sugiere una comunidad inactiva. 
-  - **Task**: La comunidad es pequeña, con pocas *issues* cerradas en el último mes. 
-  - **Sage**: Al ser relativamente nuevo, el repositorio tiene una comunidad en crecimiento, con pocos *issues* resueltos hasta ahora. 
 
 ### Elección y justificación
 
