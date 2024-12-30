@@ -1,5 +1,6 @@
 # Variables
 pkg := ./...
+folders := "./internal"
 
 # Tareas
 
@@ -30,7 +31,7 @@ clean:
 # Verificar sintaxis
 check:
 	@echo "Verificando sintaxis..."
-	go fmt {{pkg}}
+	gofmt -e {{folders}}
 
 # Ayuda sobre comandos disponibles
 help:
