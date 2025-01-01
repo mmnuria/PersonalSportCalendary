@@ -1,10 +1,8 @@
 # Selección de herramienta para la gestión de tareas
 
-## **Criterios para elegir un gestor de tareas**
+## **Criterio para elegir un gestor de tareas**
 
-- **Minimización de deuda técnica**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.
-
-- **Compatibilidad con el ecosistema Go**: La herramienta debe estar alineada con las prácticas y necesidades comunes de los proyectos desarrollados en Go, facilitando la integración sin requerir configuraciones adicionales complejas.
+- **Actualización constante**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.
 
 ## **Análisis de opciones disponibles**
 
@@ -35,20 +33,14 @@ Inspirado en Mage, Sage permite automatizar tareas dentro de proyectos en Go. Se
 
 ## **Evaluación de los gestores**
 
-Para seleccionar la herramienta más adecuada en la gestión de tareas en este proyecto, evaluaremos y compararemos cada una de las opciones disponibles con base en los criterios establecidos previamente:
+Para seleccionar la herramienta más adecuada en la gestión de tareas en este proyecto, evaluaremos y compararemos cada una de las opciones disponibles con base al criterio establecido previamente:
 
-- **Minimización de deuda técnica**:  
+- **Actualización constante**:  
    - **Just** destaca por contar con actualizaciones frecuentes y soporte activo, lo que lo hace ideal para reducir la deuda técnica.
    - **Make** es una herramienta establecida, pero sus actualizaciones son menos frecuentes, lo que puede incrementar la deuda técnica con el tiempo. 
    - **Task** presenta un desarrollo más modesto y, aunque funcional, el uso de archivos YAML puede aumentar los costos de mantenimiento si no se gestionan adecuadamente.  
    - **Mage** no ha recibido actualizaciones recientes, lo que supone un riesgo de deuda técnica futura, y su enfoque puede generar configuraciones complicadas.  
    - **Sage** es relativamente nueva, con menor madurez, lo que podría introducir complejidad adicional en proyectos grandes.   
-
-- **Compatibilidad con el ecosistema Go**:
-   - **Just** está diseñado con un enfoque simple y directo, alineándose bien con las necesidades de los proyectos Go. Su integración es más natural en este ecosistema.
-   - **Make**, aunque válido para proyectos Go, no está específicamente orientado hacia este lenguaje y puede requerir configuraciones adicionales para tareas comunes.
-   - **Task** y **Mage** ofrecen flexibilidad, pero su uso puede ser excesivo para proyectos pequeños o medianos en Go.
-   - **Sage** está pensado para Go, pero su inmadurez lo hace menos interesante.
 
 ### Elección y justificación
 
