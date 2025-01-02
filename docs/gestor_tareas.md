@@ -2,7 +2,7 @@
 
 ## **Criterio para elegir un gestor de tareas**
 
-- **Actualización constante**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.
+- **Herramienta actualizada**: La herramienta debe contar con soporte activo y actualizaciones regulares, para reducir riesgos de mantenimiento a largo plazo.
 
 ## **Análisis de opciones disponibles**
 
@@ -35,7 +35,7 @@ Inspirado en Mage, Sage permite automatizar tareas dentro de proyectos en Go. Se
 
 Para seleccionar la herramienta más adecuada en la gestión de tareas en este proyecto, evaluaremos y compararemos cada una de las opciones disponibles con base al criterio establecido previamente:
 
-- **Actualización constante**:  
+- **Herramienta actualizada**:  
    - **Just** destaca por contar con actualizaciones frecuentes y soporte activo, lo que lo hace ideal para reducir la deuda técnica.
    - **Make** es una herramienta establecida, pero sus actualizaciones son menos frecuentes, lo que puede incrementar la deuda técnica con el tiempo. 
    - **Task** presenta un desarrollo más modesto y, aunque funcional, el uso de archivos YAML puede aumentar los costos de mantenimiento si no se gestionan adecuadamente.  
@@ -44,6 +44,4 @@ Para seleccionar la herramienta más adecuada en la gestión de tareas en este p
 
 ### Elección y justificación
 
-Tras evaluar las opciones disponibles, tanto **Make** como **Just** cumplen con los criterios establecidos y son válidas para este proyecto. Sin embargo, Just es preferible porque además de minimizar la deuda técnica, está más alineado con las prácticas comunes y necesidades de los proyectos Go, lo que facilita la integración y reduce el tiempo de configuración.
-
-Este enfoque orientado hacia Go no solo simplifica la gestión de tareas, sino que también refuerza la sostenibilidad y eficiencia del proyecto a largo plazo. Por lo tanto, **Just se selecciona como la herramienta más adecuada.**
+Tras evaluar las opciones disponibles, tanto **Make** como **Just** cumplen con los criterios establecidos y son válidas para este proyecto. Sin embargo, Just es preferible porque además de minimizar la deuda técnica, se distribuye en archivos binarios que están disponibles para las principales plataformas (Windows, macOS, y Linux), en cambio, make requiere dependencias externas en algunos sistemas operativos como Windows. En definitiva, facilita la integración y reduce el tiempo de configuración, por lo tanto, **Just se selecciona como la herramienta más adecuada.**
