@@ -43,3 +43,13 @@ just check
 ## [Biblioteca de aserciones](./docs/biblioteca_asersiones.md)
 
 ## [Test runner](./docs/test_runner.md)
+
+Para ejecutar los tets:
+
+```
+just test
+```
+
+## Información de la licencia:
+
+[Licencia](./LICENSE)
