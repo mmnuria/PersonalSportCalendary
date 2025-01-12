@@ -39,3 +39,5 @@ De las diferentes tareas una de la más necesarias es la comprobación de la sin
 ```
 just check
 ```
+
+## [Biblioteca de aserciones](./docs/biblioteca_asersiones.md)
