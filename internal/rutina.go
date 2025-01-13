@@ -2,14 +2,8 @@ package PersonalSportCalendary
 
 import "fmt"
 
-// ListaRutinas guarda el conjunto de rutinas que un usuario puede realizar.
 var ListaRutinas []Rutina
 
-// Rutina representa una rutina de ejercicios que un usuario puede realizar.
-// - Nombre: Nombre de la rutina.
-// - Tiempo: Duración en minutos de la rutina (máximo 1440, un día).
-// - Ejercicios: Instrucciones detalladas sobre los ejercicios que componen la rutina y sus repeticiones.
-// - Materiales: Materiales necesarios para realizar la rutina entre: Peso, BandaElastica, Cuerda, Ester
 type Rutina struct {
 	Nombre         string
 	TiempoDuracion uint
@@ -17,7 +11,6 @@ type Rutina struct {
 	Materiales     []string
 }
 
-// NewRutina crea una nueva instancia de Rutina.
 func NewRutina(nombre string, tiempoDuracion uint, ejercicios []Ejercicio, materiales []string) (Rutina, error) {
 	if tiempoDuracion <= 0 || tiempoDuracion > 1440 {
 		return Rutina{}, fmt.Errorf("el tiempo debe estar entre 1 y 1440 minutos, recibido: %d", tiempoDuracion)
