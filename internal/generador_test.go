@@ -25,7 +25,13 @@ func TestGenerarRutinaTiempoInvalido(t *testing.T) {
 		assert.Equal(t, "el tiempo disponible debe estar entre 1 y 1440 minutos", err.Error())
 	}
 }
+
+func TestGenerarRutinaErrorPorFaltaDeEjercicios(t *testing.T) {
+	const TiempoValido = 1000
+
+	_, err := GenerarRutina(TiempoValido)
 	assert.Error(t, err)
+	assert.Equal(t, "no hay suficientes ejercicios para llenar el tiempo disponible", err.Error())
 }
 
 func TestGenerarPlanSemanal(t *testing.T) {
