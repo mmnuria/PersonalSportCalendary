@@ -2,9 +2,10 @@ package PersonalSportCalendary
 
 import "errors"
 
-// GenerarRutina genera una rutina de ejercicios basada en el tiempo disponible diario.
+const MaxMinutosPorDia = 1440
+
 func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
-	if tiempoDisponible <= 0 || tiempoDisponible > 1440 {
+	if tiempoDisponible <= 0 || tiempoDisponible > MaxMinutosPorDia {
 		return Rutina{}, errors.New("el tiempo disponible debe estar entre 1 y 1440 minutos")
 	}
 
@@ -30,7 +31,6 @@ func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 	}, nil
 }
 
-// GenerarPlanSemanal crea un plan semanal basado en el tiempo libre del usuario.
 func GenerarPlanSemanal(tiempoLibre TiempoLibre) (PlanSemanal, error) {
 	var rutinas []Rutina
 	for i := uint(0); i < tiempoLibre.DiasLibresSemanales; i++ {
