@@ -35,8 +35,10 @@ func TestGenerarRutinaErrorPorFaltaDeEjercicios(t *testing.T) {
 }
 
 func TestGenerarPlanSemanal(t *testing.T) {
-	tiempoLibre := TiempoLibre{DiasLibresSemanales: 3, TiempoLibreDiario: 10}
+	const TiempoValido = 10
+	const DiasLibres = 3
+	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	assert.NoError(t, err)
-	assert.Len(t, plan, 3)
+	assert.Len(t, plan, DiasLibres)
 }
