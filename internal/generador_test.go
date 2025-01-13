@@ -7,9 +7,10 @@ import (
 )
 
 func TestGenerarRutina(t *testing.T) {
-	rutina, err := GenerarRutina(10)
+	const TiempoValido = 10
+	rutina, err := GenerarRutina(TiempoValido)
 	assert.NoError(t, err)
-	assert.Equal(t, uint(10), rutina.TiempoDuracion)
+	assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
 	assert.Len(t, rutina.Ejercicios, 2)
 }
 
