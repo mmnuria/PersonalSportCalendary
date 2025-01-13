@@ -14,8 +14,17 @@ func TestGenerarRutina(t *testing.T) {
 	assert.Len(t, rutina.Ejercicios, 2)
 }
 
-func TestGenerarRutinaInsuficienteTiempo(t *testing.T) {
-	_, err := GenerarRutina(1000)
+func TestGenerarRutinaTiempoInvalido(t *testing.T) {
+	const TiempoMinimo = 0
+	const TiempoMaximo = MaxMinutosPorDia
+	tiemposInvalidos := []uint{TiempoMinimo, TiempoMaximo + 1}
+
+	for _, tiempo := range tiemposInvalidos {
+		_, err := GenerarRutina(tiempo)
+		assert.Error(t, err)
+		assert.Equal(t, "el tiempo disponible debe estar entre 1 y 1440 minutos", err.Error())
+	}
+}
 	assert.Error(t, err)
 }
 
