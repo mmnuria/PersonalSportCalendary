@@ -1,5 +1,5 @@
 # Variables
-pkg := ./...
+pkg := "./..."
 folders := "./internal"
 
 # Tareas
@@ -36,10 +36,10 @@ check:
 # Ayuda sobre comandos disponibles
 help:
 	@echo "Comandos disponibles:"
-	@echo "  just all     - Ejecuta install, test, build, clean, check y help"
-	@echo "  just install - Instala dependencias."
-	@echo "  just test    - Ejecuta pruebas unitarias."
-	@echo "  just build   - Construye el proyecto."
-	@echo "  just clean   - Limpia archivos generados."
-	@echo "  just check   - Verifica sintaxis"
-	@echo "  just help    - Muestra esta ayuda."
+	@echo "  make all     - Ejecuta install, test, build, clean, check y help"
+	@echo "  make install - Instala dependencias."
+	@echo "  make test    - Ejecuta pruebas unitarias."
+	@echo "  make build   - Construye el proyecto."
+	@echo "  make clean   - Limpia archivos generados."
+	@echo "  make check   - Verifica sintaxis"
+	@echo "  make help    - Muestra esta ayuda."
