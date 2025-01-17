@@ -4,18 +4,37 @@ import "errors"
 
 const MaxMinutosPorDia = 1440
 
+func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint) bool {
+	return ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0
+}
+
+func filtrarEjerciciosValidos(ejercicios []Ejercicio, tiempoRestante uint) []Ejercicio {
+	var ejerciciosValidos []Ejercicio
+	for _, ejercicio := range ejercicios {
+		if EsEjercicioValido(ejercicio, tiempoRestante) {
+			ejerciciosValidos = append(ejerciciosValidos, ejercicio)
+		}
+	}
+	return ejerciciosValidos
+}
+
 func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 	if tiempoDisponible <= 0 || tiempoDisponible > MaxMinutosPorDia {
 		return Rutina{}, errors.New("el tiempo disponible debe estar entre 1 y 1440 minutos")
 	}
 
-	var ejerciciosSeleccionados []Ejercicio
+	ejerciciosSeleccionados := []Ejercicio{}
 	tiempoRestante := tiempoDisponible
 
-	for _, ejercicio := range ListaEjercicios {
-		if ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0 {
+	ejerciciosFiltrados := filtrarEjerciciosValidos(ListaEjercicios, tiempoRestante)
+
+	for _, ejercicio := range ejerciciosFiltrados {
+		if ejercicio.MinsEstimados <= tiempoRestante {
 			ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
 			tiempoRestante -= ejercicio.MinsEstimados
+		}
+		if tiempoRestante <= 0 {
+			break
 		}
 	}
 
