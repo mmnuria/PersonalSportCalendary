@@ -1,5 +1,5 @@
 # Variables
-pkg := ./...
+pkg := "./..."
 folders := "./internal"
 
 # Tareas
