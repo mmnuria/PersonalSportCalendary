@@ -11,13 +11,18 @@ func TestGenerarRutina(t *testing.T) {
 	rutina, err := GenerarRutina(TiempoValido)
 	assert.NoError(t, err)
 	assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
-	assert.Len(t, rutina.Ejercicios, 2)
+
+	// Verificar que la duración total de los ejercicios coincide con el tiempo disponible
+	totalTiempoEjercicios := uint(0)
+	for _, ejercicio := range rutina.Ejercicios {
+		totalTiempoEjercicios += ejercicio.MinsEstimados
+	}
+	assert.Equal(t, totalTiempoEjercicios, uint(TiempoValido))
 }
 
 func TestGenerarRutinaTiempoInvalido(t *testing.T) {
 	const TiempoMinimo = 0
-	const TiempoMaximo = MaxMinutosPorDia
-	tiemposInvalidos := []uint{TiempoMinimo, TiempoMaximo + 1}
+	tiemposInvalidos := []uint{TiempoMinimo, MaxMinutosPorDia + 1}
 
 	for _, tiempo := range tiemposInvalidos {
 		_, err := GenerarRutina(tiempo)
@@ -41,4 +46,34 @@ func TestGenerarPlanSemanal(t *testing.T) {
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	assert.NoError(t, err)
 	assert.Len(t, plan, DiasLibres)
+}
+
+func TestGenerarPlanSemanalDuracion(t *testing.T) {
+	const TiempoValido = 10
+	const DiasLibres = 3
+	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
+	plan, err := GenerarPlanSemanal(tiempoLibre)
+	assert.NoError(t, err)
+
+	// Verificar que cada rutina dentro del plan tiene la duración esperada
+	for _, rutina := range plan {
+		assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
+	}
+}
+
+func TestGenerarPlanSemanalEjercicios(t *testing.T) {
+	const TiempoValido = 10
+	const DiasLibres = 3
+	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
+	plan, err := GenerarPlanSemanal(tiempoLibre)
+	assert.NoError(t, err)
+
+	// Verificar que la duración total de los ejercicios de la rutina coincide con el tiempo disponible
+	for _, rutina := range plan {
+		totalTiempoEjercicios := uint(0)
+		for _, ejercicio := range rutina.Ejercicios {
+			totalTiempoEjercicios += ejercicio.MinsEstimados
+		}
+		assert.Equal(t, totalTiempoEjercicios, uint(TiempoValido))
+	}
 }
