@@ -33,9 +33,6 @@ func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 			ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
 			tiempoRestante -= ejercicio.MinsEstimados
 		}
-		if tiempoRestante <= 0 {
-			break
-		}
 	}
 
 	if tiempoRestante > 0 {
