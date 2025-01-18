@@ -12,7 +12,6 @@ func TestGenerarRutina(t *testing.T) {
 	assert.NoError(t, err)
 	assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
 
-	// Verificar que la duración total de los ejercicios coincide con el tiempo disponible
 	totalTiempoEjercicios := uint(0)
 	for _, ejercicio := range rutina.Ejercicios {
 		totalTiempoEjercicios += ejercicio.MinsEstimados
@@ -55,7 +54,6 @@ func TestGenerarPlanSemanalDuracion(t *testing.T) {
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	assert.NoError(t, err)
 
-	// Verificar que cada rutina dentro del plan tiene la duración esperada
 	for _, rutina := range plan {
 		assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
 	}
@@ -68,7 +66,6 @@ func TestGenerarPlanSemanalEjercicios(t *testing.T) {
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	assert.NoError(t, err)
 
-	// Verificar que la duración total de los ejercicios de la rutina coincide con el tiempo disponible
 	for _, rutina := range plan {
 		totalTiempoEjercicios := uint(0)
 		for _, ejercicio := range rutina.Ejercicios {
