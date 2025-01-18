@@ -22,11 +22,12 @@
 
 ### Justificación.
 
-Se ha seleccionado **Testify** como la herramienta de aserciones para el proyecto debido a:
+Se ha seleccionado el paquete **assert** de la biblioteca **Testify** como la herramienta de aserciones para el proyecto debido a:
 
-1. Su mantenimiento constante (última actualización hace menos de un mes).
+1. Su mantenimiento constante
 2. Su capacidad para realizar aserciones con mensajes personalizados.
-3. Su integración nativa con `go test`, evitando configuraciones adicionales.
-4. Es una biblioteca muy popular y ampliamente utilizada, lo que garantiza un amplio soporte comunitario.
+3. Su integración nativa con go test, evitando configuraciones adicionales.
 
 Alternativamente, **GoConvey** y **Assert** son opciones viables, aunque **Testify** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
+
+*Nota:* Aunque Testify es una biblioteca más completa que incluye funcionalidades adicionales como mocking, **en este proyecto se utiliza exclusivamente el paquete assert**, no el framework completo.
