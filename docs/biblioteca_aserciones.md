@@ -10,9 +10,8 @@
 **Gomega**: Gomega es una biblioteca robusta y actualizada que proporciona amplias funcionalidades para pruebas, incluyendo soporte para mensajes detallados. 
 [Documentación oficial](https://github.com/onsi/gomega)
 
-**Testify**: Testify es una biblioteca de pruebas que incluye, entre otras funcionalidades, un paquete llamado **assert** que permite realizar aserciones en las pruebas unitarias. Es ampliamente utilizada en Go, facilita la integración con `go test` y se actualiza regularmente. Testify ofrece funciones de aserción personalizables y soporta mensajes detallados. Aunque es una herramienta más completa (que incluye también un paquete de mocking), su componente de aserciones es perfectamente adecuado para el proyecto.
-
-[Documentación oficial](https://github.com/stretchr/testify) 
+**Assert**: Assert es un paquete que forma parte de la biblioteca testify y permite realizar aserciones en las pruebas unitarias. Es ampliamente utilizado en Go, facilita la integración con `go test` y se actualiza regularmente.
+[Documentación oficial](https://pkg.go.dev/github.com/stretchr/testify/assert) 
 
 **GoConvey**: GoConvey es otro framework de pruebas que ofrece una integración fácil con Ginkgo, y se mantiene actualizado. Su sintaxis para aserciones es bastante legible, pero podría introducir una sobrecarga innecesaria. Ofrece soporte para mensajes personalizados en las aserciones.  
 [Documentación oficial](https://github.com/smartystreets/goconvey)
@@ -22,12 +21,10 @@
 
 ### Justificación.
 
-Se ha seleccionado el paquete **assert** de la biblioteca **Testify** como la herramienta de aserciones para el proyecto debido a:
+Se ha seleccionado el paquete **assert** como la herramienta de aserciones para el proyecto debido a:
 
 1. Su mantenimiento constante
 2. Su capacidad para realizar aserciones con mensajes personalizados.
-3. Su integración nativa con go test, evitando configuraciones adicionales.
+3. Su integración nativa con `go test`, evitando configuraciones adicionales.
 
-Alternativamente, **GoConvey** y **Assert** son opciones viables, aunque **Testify** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
-
-*Nota:* Aunque Testify es una biblioteca más completa que incluye funcionalidades adicionales como mocking, **en este proyecto se utiliza exclusivamente el paquete assert**, no el framework completo.
+Alternativamente, **GoConvey** y **Assert** son opciones viables, aunque **assert** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
