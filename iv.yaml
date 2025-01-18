@@ -1,7 +1,7 @@
 lenguaje: Go
 entidad: /internal/plan-semanal.go
 automatizar:
-  fichero: justfile
-  orden: just
+  fichero: makefile
+  orden: make
 test:
   - internal/generador_test.go
