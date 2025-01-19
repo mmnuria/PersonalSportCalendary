@@ -6,8 +6,9 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+const TiempoValido = 10
+
 func TestGenerarRutina(t *testing.T) {
-	const TiempoValido = 10
 	rutina, err := GenerarRutina(TiempoValido)
 	assert.NoError(t, err)
 	assert.Equal(t, uint(TiempoValido), rutina.TiempoDuracion)
@@ -39,7 +40,6 @@ func TestGenerarRutinaErrorPorFaltaDeEjercicios(t *testing.T) {
 }
 
 func TestGenerarPlanSemanal(t *testing.T) {
-	const TiempoValido = 10
 	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
@@ -48,7 +48,6 @@ func TestGenerarPlanSemanal(t *testing.T) {
 }
 
 func TestGenerarPlanSemanalDuracion(t *testing.T) {
-	const TiempoValido = 10
 	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
@@ -60,7 +59,6 @@ func TestGenerarPlanSemanalDuracion(t *testing.T) {
 }
 
 func TestGenerarPlanSemanalEjercicios(t *testing.T) {
-	const TiempoValido = 10
 	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
