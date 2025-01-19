@@ -11,5 +11,5 @@ check:
 
 help:
 	@echo "Comandos disponibles:"
-	@echo "  make install - Instala dependencias."
-	@echo "  make check   - Verifica sintaxis"
+	@echo "  just install - Instala dependencias."
+	@echo "  just check   - Verifica sintaxis"
