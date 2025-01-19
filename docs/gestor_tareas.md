@@ -3,7 +3,7 @@
 ## **Criterio para elegir un gestor de tareas**
 
 1. **Proyecto en activo y sujeto a mantenimiento continuo**:
-  Se considerará el repositorio de código oficial para evaluar si los commits y las versiones de cada herramienta son recientes. Adicionalmente, se valorará de forma positiva la antigüedad del proyecto como garantía de soporte.  
+  Se considerará el repositorio de código oficial para evaluar si los commits y las versiones de cada herramienta son recientes.
 
 ## **Análisis de opciones disponibles**
 
@@ -36,4 +36,4 @@
 
 En primer lugar, descartamos **Mage** y **Make** ya que no han recibido actualizaciones en el último año.
 
-A partir de lo expuesto anteriormente, podríamos elegir entre las herramientas **Sage**, **Just** y **Task**, siendo todas ellas buenas opciones que cumplen el criterio. No obstante, se decide seleccionar **Just** para el proyecto, por ser la de mayor antigüedad.
+A partir de lo expuesto anteriormente, podríamos elegir entre las herramientas **Sage**, **Just** y **Task**, siendo todas ellas opciones que cumplen el criterio. Dado que las tres son válidas, elijo **Just** por criterio propio.
