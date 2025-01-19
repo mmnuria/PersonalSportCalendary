@@ -37,5 +37,5 @@ En el siguiente [archivo](./docs/gestor_tareas.md) puede encontrar una amplia ex
 De las diferentes tareas una de la más necesarias es la comprobación de la sintaxis:
 
 ```
-make check
+just check
 ```
