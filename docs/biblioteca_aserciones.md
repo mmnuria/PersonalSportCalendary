@@ -1,26 +1,24 @@
 # Requisitos para la elección de la biblioteca de aserciones
-1. Herramienta actualizada para evitar deuda técnica.
-2. Debe permitir realizar aserciones que permitan proporcionar mensajes personalizados.
+1. Herramienta actualizada para evitar deuda técnica. Para medir el estado de mantenimiento de un proyecto se usará ["Snyk Advisor"](https://snyk.io/advisor/golang) que aporta una métrica _Maintenance_ que indica si el proyecto está mantenido actualmente
 
 # Opciones de la biblioteca de aserciones
 
-**GoCheck**: Aunque GoCheck ofrece funcionalidades útiles, su falta de actualizaciones durante cinco años genera una alta deuda técnica. Por esta razón, no se considera una opción viable para el proyecto.
+**GoCheck**: Aunque GoCheck ofrece funcionalidades útiles, su falta de actualizaciones durante cinco años genera una alta deuda técnica. Por esta razón, no se considera una opción viable para el proyecto. En Snyk Advisor no aparece un análisis al respecto.
 [Documentación oficial](https://github.com/go-check/check)
 
-**Gomega**: Gomega es una biblioteca robusta y actualizada que proporciona amplias funcionalidades para pruebas, incluyendo soporte para mensajes detallados. 
+**Gomega**: Gomega es una biblioteca robusta y actualizada que proporciona amplias funcionalidades para pruebas. Aparece como [_Healthy_](https://snyk.io/advisor/golang/github.com/onsi/gomega) en el apartado de mantenimiento de Snyk Advisor.
 [Documentación oficial](https://github.com/onsi/gomega)
 
-**Assert**: Assert es un paquete que forma parte de la biblioteca testify y permite realizar aserciones en las pruebas unitarias. Es ampliamente utilizado en Go, facilita la integración con `go test` y se actualiza regularmente.
+**Assert**: Assert es un paquete que forma parte de la biblioteca testify y permite realizar aserciones en las pruebas unitarias. Es ampliamente utilizado en Go, facilita la integración con `go test` y se actualiza regularmente. Aunque no existe el análisis del repositorio original por parte de Snyk, si que figuran algunos [análisis](https://snyk.io/advisor/golang/github.com/01ne/testify) de forks de hace tres meses de este mismo proyecto que tienen un rating de _Sustainable_ en el apartado de mantenimiento. 
 [Documentación oficial](https://pkg.go.dev/github.com/stretchr/testify/assert) 
 
-**GoConvey**: GoConvey es otro framework de pruebas que ofrece una integración fácil con Ginkgo, no obstante lleva sin actualizarse desde hace casi dos años. Ofrece soporte para mensajes personalizados en las aserciones.  
+**GoConvey**: GoConvey es otro framework de pruebas que ofrece una integración fácil con Ginkgo, no obstante lleva sin actualizarse desde hace casi dos años.  
 [Documentación oficial](https://github.com/smartystreets/goconvey)
 
 ### Justificación.
 
-Se ha seleccionado el paquete **Assert** como la herramienta de aserciones para el proyecto debido a:
+Se ha seleccionado el paquete **Gomega** como la herramienta de aserciones para el proyecto debido a:
 
 1. Su mantenimiento constante
-2. Su capacidad para realizar aserciones con mensajes personalizados.
 
-Alternativamente, **Gomega** es una opción viable aunque **Assert** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
+Alternativamente, **Assert** es una opción viable aunque **Gomega** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
