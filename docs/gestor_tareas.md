@@ -3,12 +3,12 @@
 ## **Criterio para elegir un gestor de tareas**
 
 1. **Proyecto en activo y sujeto a mantenimiento continuo**:
-  Se considerará el repositorio de código oficial para evaluar la cantidad de commits y las versiones más recientes de cada herramienta. Adicionalmente, se valorará de forma positiva la antigüedad del proyecto como garantía de soporte.  
+  Se considerará el repositorio de código oficial para evaluar si los commits y las versiones de cada herramienta son recientes.
 
 ## **Análisis de opciones disponibles**
 
 ### **Make**  
-- **Proyecto en activo y sujeto a mantenimiento continuo:** Aunque la herramienta se considera inactiva, se ha recibido un [último commit](http://git.savannah.gnu.org/cgit/make.git/refs/) hace 6 semanas, lo que indica que todavía se mantiene. Dado que **Make** ha sido activamente mantenida durante décadas, ha logrado asegurar una alta fiabilidad y compatibilidad futura sin problemas, lo que ha reducido la necesidad de actualizaciones frecuentes.
+- **Proyecto en activo y sujeto a mantenimiento continuo:** **Make** ha sido activamente mantenida durante décadas, ha logrado asegurar una alta fiabilidad y compatibilidad futura sin problemas, lo que ha reducido la necesidad de actualizaciones frecuentes. No obstante, no ha sido actualizada en los últimos dos años.
 
 [Documentación oficial de Make](http://git.savannah.gnu.org/cgit/make.git)
 
@@ -34,6 +34,6 @@
 
 ## **Elección y justificación**
 
-En primer lugar, descartamos **Mage** ya que no ha recibido actualizaciones en el último año.
+En primer lugar, descartamos **Mage** y **Make** ya que no han recibido actualizaciones en el último año.
 
-A partir de lo expuesto anteriormente, podríamos elegir entre las herramientas **Sage**, **Just**, **Make** y **Task**, siendo todas ellas buenas opciones que cumplen el criterio. No obstante, **Make** está respaldada por décadas de mantenimiento activo, siendo la de mayor antigüedad y por tanto se decide seleccionarla para el proyecto.
+A partir de lo expuesto anteriormente, podríamos elegir entre las herramientas **Sage**, **Just** y **Task**, siendo todas ellas opciones que cumplen el criterio. Dado que las tres son válidas, elijo **Just** por criterio propio.
