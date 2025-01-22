@@ -17,8 +17,4 @@
 
 ### Justificación.
 
-Se ha seleccionado el paquete **Gomega** como la herramienta de aserciones para el proyecto debido a:
-
-1. Su mantenimiento constante
-
-Alternativamente, **Assert** es una opción viable aunque **Gomega** sobresale por su frecuencia de actualizaciones, lo que la hace la opción preferida para este proyecto.
+Aunque **Assert** es una opción viable, se ha seleccionado el paquete **Gomega** como la herramienta de aserciones para el proyecto debido a contar con el mejor mantenimiento de las cuatro opciones disponibles, lo que se ve reflejado en tener la mejor puntuación en Snyk.
