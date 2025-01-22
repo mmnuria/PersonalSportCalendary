@@ -13,7 +13,7 @@ func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint, ejercicios *[]E
 func filtrarEjerciciosValidos(ejercicios []Ejercicio, tiempoRestante uint) []Ejercicio {
 	var ejerciciosValidos []Ejercicio
 
-	for _, ejercicio := range ejercicios {
+	for _,  ejercicio := range ejercicios {
 		EsEjercicioValido(ejercicio, tiempoRestante, &ejerciciosValidos)
 	}
 	return ejerciciosValidos
@@ -29,11 +29,9 @@ func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 
 	ejerciciosFiltrados := filtrarEjerciciosValidos(ListaEjercicios, tiempoRestante)
 
-	for _, ejercicio := range ejerciciosFiltrados {
-		if ejercicio.MinsEstimados <= tiempoRestante {
-			ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
-			tiempoRestante -= ejercicio.MinsEstimados
-		}
+	for _,  ejercicio := range ejerciciosFiltrados {
+		ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
+		tiempoRestante -= ejercicio.MinsEstimados
 	}
 
 	if tiempoRestante > 0 {
