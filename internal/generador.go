@@ -4,16 +4,17 @@ import "errors"
 
 const MaxMinutosPorDia = 1440
 
-func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint) bool {
-	return ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0
+func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint, ejercicios *[]Ejercicio) {
+	if ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0 {
+		*ejercicios = append(*ejercicios, ejercicio)
+	}
 }
 
 func filtrarEjerciciosValidos(ejercicios []Ejercicio, tiempoRestante uint) []Ejercicio {
 	var ejerciciosValidos []Ejercicio
+
 	for _, ejercicio := range ejercicios {
-		if EsEjercicioValido(ejercicio, tiempoRestante) {
-			ejerciciosValidos = append(ejerciciosValidos, ejercicio)
-		}
+		EsEjercicioValido(ejercicio, tiempoRestante, &ejerciciosValidos)
 	}
 	return ejerciciosValidos
 }
