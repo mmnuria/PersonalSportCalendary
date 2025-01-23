@@ -2,20 +2,36 @@ package PersonalSportCalendary
 
 import "errors"
 
-// GenerarRutina genera una rutina de ejercicios basada en el tiempo disponible diario.
+const MaxMinutosPorDia = 1440
+
+func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint, ejercicios *[]Ejercicio) {
+	if ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0 {
+		*ejercicios = append(*ejercicios, ejercicio)
+	}
+}
+
+func filtrarEjerciciosValidos(ejercicios []Ejercicio, tiempoRestante uint) []Ejercicio {
+	var ejerciciosValidos []Ejercicio
+
+	for _,  ejercicio := range ejercicios {
+		EsEjercicioValido(ejercicio, tiempoRestante, &ejerciciosValidos)
+	}
+	return ejerciciosValidos
+}
+
 func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
-	if tiempoDisponible <= 0 || tiempoDisponible > 1440 {
+	if tiempoDisponible <= 0 || tiempoDisponible > MaxMinutosPorDia {
 		return Rutina{}, errors.New("el tiempo disponible debe estar entre 1 y 1440 minutos")
 	}
 
-	var ejerciciosSeleccionados []Ejercicio
+	ejerciciosSeleccionados := []Ejercicio{}
 	tiempoRestante := tiempoDisponible
 
-	for _, ejercicio := range ListaEjercicios {
-		if ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0 {
-			ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
-			tiempoRestante -= ejercicio.MinsEstimados
-		}
+	ejerciciosFiltrados := filtrarEjerciciosValidos(ListaEjercicios, tiempoRestante)
+
+	for _,  ejercicio := range ejerciciosFiltrados {
+		ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
+		tiempoRestante -= ejercicio.MinsEstimados
 	}
 
 	if tiempoRestante > 0 {
@@ -30,7 +46,6 @@ func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 	}, nil
 }
 
-// GenerarPlanSemanal crea un plan semanal basado en el tiempo libre del usuario.
 func GenerarPlanSemanal(tiempoLibre TiempoLibre) (PlanSemanal, error) {
 	var rutinas []Rutina
 	for i := uint(0); i < tiempoLibre.DiasLibresSemanales; i++ {
