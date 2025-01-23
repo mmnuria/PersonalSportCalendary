@@ -50,6 +50,23 @@ Para ejecutar los tets:
 just test
 ```
 
+## Docker
+La imagen a usar se puede encontrar explicada en el [archivo](/docs/imagen-docker.md).
+
+1. Ejecución y montaje local:
+```
+docker build -t [nombre] .
+```
+```
+docker run -t -u 1001 -v `pwd`:/app/test [nombre]
+```
+
+2. Ejecución Docker:
+```
+docker run -t -u 1001 -v `pwd`:/app/test mmnuria/personalsportcalendary:latest
+
+```
+
 ## Información de la licencia:
 
 [Licencia](./LICENSE)
