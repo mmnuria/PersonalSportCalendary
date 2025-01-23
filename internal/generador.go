@@ -1,22 +1,15 @@
 package PersonalSportCalendary
 
-import "errors"
+import (
+	"errors"
+)
 
 const MaxMinutosPorDia = 1440
 
-func EsEjercicioValido(ejercicio Ejercicio, tiempoRestante uint, ejercicios *[]Ejercicio) {
-	if ejercicio.MinsEstimados <= tiempoRestante && len(ejercicio.Materiales) == 0 {
+func GuardarEjercicioSiValido(ejercicio Ejercicio, ejercicios *[]Ejercicio) {
+	if len(ejercicio.Materiales) == 0 {
 		*ejercicios = append(*ejercicios, ejercicio)
 	}
-}
-
-func filtrarEjerciciosValidos(ejercicios []Ejercicio, tiempoRestante uint) []Ejercicio {
-	var ejerciciosValidos []Ejercicio
-
-	for _,  ejercicio := range ejercicios {
-		EsEjercicioValido(ejercicio, tiempoRestante, &ejerciciosValidos)
-	}
-	return ejerciciosValidos
 }
 
 func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
@@ -24,14 +17,19 @@ func GenerarRutina(tiempoDisponible uint) (Rutina, error) {
 		return Rutina{}, errors.New("el tiempo disponible debe estar entre 1 y 1440 minutos")
 	}
 
-	ejerciciosSeleccionados := []Ejercicio{}
+	ejerciciosValidos := []Ejercicio{}
 	tiempoRestante := tiempoDisponible
 
-	ejerciciosFiltrados := filtrarEjerciciosValidos(ListaEjercicios, tiempoRestante)
+	for _, ejercicio := range ListaEjercicios {
+		GuardarEjercicioSiValido(ejercicio, &ejerciciosValidos)
+	}
 
-	for _,  ejercicio := range ejerciciosFiltrados {
-		ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
+	ejerciciosSeleccionados := []Ejercicio{}
+
+	for i := 0; tiempoRestante > 0 && i < len(ListaEjercicios); i++ {
+		ejercicio := ListaEjercicios[i]
 		tiempoRestante -= ejercicio.MinsEstimados
+		ejerciciosSeleccionados = append(ejerciciosSeleccionados, ejercicio)
 	}
 
 	if tiempoRestante > 0 {
