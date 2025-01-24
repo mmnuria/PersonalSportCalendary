@@ -24,7 +24,7 @@ type Ejercicio struct {
 	MinsEstimados  uint
 	ClaseEjercicio string
 	Intensidad     string
-	Materiales     []string
+	Materiales     [] string
 }
 
 func init() {
