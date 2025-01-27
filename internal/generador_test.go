@@ -7,6 +7,7 @@ import (
 )
 
 const TiempoValido = 10
+const DiasLibres = 3
 
 func TestGenerarRutina(t *testing.T) {
 	g := NewGomegaWithT(t)
@@ -48,7 +49,6 @@ func TestGenerarRutinaErrorPorFaltaDeEjercicios(t *testing.T) {
 func TestGenerarPlanSemanal(t *testing.T) {
 	g := NewGomegaWithT(t)
 
-	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	g.Expect(err).To(BeNil())
@@ -58,7 +58,6 @@ func TestGenerarPlanSemanal(t *testing.T) {
 func TestGenerarPlanSemanalDuracion(t *testing.T) {
 	g := NewGomegaWithT(t)
 
-	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	g.Expect(err).To(BeNil())
@@ -71,7 +70,6 @@ func TestGenerarPlanSemanalDuracion(t *testing.T) {
 func TestGenerarPlanSemanalEjercicios(t *testing.T) {
 	g := NewGomegaWithT(t)
 
-	const DiasLibres = 3
 	tiempoLibre := TiempoLibre{DiasLibresSemanales: DiasLibres, TiempoLibreDiario: TiempoValido}
 	plan, err := GenerarPlanSemanal(tiempoLibre)
 	g.Expect(err).To(BeNil())
