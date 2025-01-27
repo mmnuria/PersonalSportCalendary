@@ -24,7 +24,7 @@
 
 Las herramientas que cumplen con los requisitos establecidos son: **GitHub Actions**, **CircleCI**, **Semaphore CI** y **Appveyor**.  
 
-Es necesario la realización de las siguientes configuraciones para cada herramienta:  
+Para configurar algunas pruebas de las herramientas anteriores, se han tenido que realizar las siguientes configuraciones:
 
 1. **GitHub Actions**  
    - Crear un archivo en el directorio `.github/workflows/` llamado `continuous-integration.yml`.  
