@@ -20,6 +20,14 @@
     Gratuito para las primeras 100 builds, luego requiere un pago mínimo de $13.75 al mes. 
     [Documentación oficial](https://www.travis-ci.com/)  
 
+**Jenkins**:    
+Software de automatización de código abierto, completamente gratuito. Aunque no es nativo de GitHub, ofrece integraciones mediante *webhooks* y plugins para conectar con GitHub. Requiere configuración en un servidor propio o en un servicio de alojamiento en la nube.  
+[Documentación oficial](https://www.jenkins.io/doc/)
+
+**Appveyor**:    
+Gratuito para proyectos de código abierto con posibilidad de pago $29 al mes para repositorios privados. Integración con GitHub disponible mediante configuración en su plataforma. 
+[Documentación oficial](https://www.appveyor.com/)
+
 ## Posibles opciones 
 
 Las herramientas que cumplen con los requisitos establecidos son: **GitHub Actions**, **CircleCI**, **Semaphore CI** y **Appveyor**.  
@@ -37,7 +45,7 @@ Para configurar algunas pruebas de las herramientas anteriores, se han tenido qu
    - Crear un archivo `semaphore.yml` en un nuevo directorio llamado `.semaphore`.
 
 4. **Appveyor**  
-   - Crear un archivo `appveyor.yml` en la raíz del proyecto.  
+   -  Crear un archivo `appveyor.yml` en la raíz del proyecto.  
 
 ### Conclusión
 
