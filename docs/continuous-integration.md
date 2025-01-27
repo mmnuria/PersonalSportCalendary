@@ -21,12 +21,12 @@
     [Documentación oficial](https://www.travis-ci.com/)  
 
 **Jenkins**:    
-Software de automatización de código abierto, completamente gratuito. Aunque no es nativo de GitHub, ofrece integraciones mediante *webhooks* y plugins para conectar con GitHub. Requiere configuración en un servidor propio o en un servicio de alojamiento en la nube.  
-[Documentación oficial](https://www.jenkins.io/doc/)
+    Software de automatización de código abierto, completamente gratuito. Aunque no es nativo de GitHub, ofrece integraciones mediante *webhooks* y plugins para conectar con GitHub. Requiere configuración en un servidor propio o en un servicio de alojamiento en la nube.  
+    [Documentación oficial](https://www.jenkins.io/doc/)
 
 **Appveyor**:    
-Gratuito para proyectos de código abierto con posibilidad de pago $29 al mes para repositorios privados. Integración con GitHub disponible mediante configuración en su plataforma. 
-[Documentación oficial](https://www.appveyor.com/)
+    Gratuito para proyectos de código abierto con posibilidad de pago $29 al mes para repositorios privados. Integración con GitHub disponible mediante configuración en su plataforma. 
+    [Documentación oficial](https://www.appveyor.com/)
 
 ## Posibles opciones 
 
