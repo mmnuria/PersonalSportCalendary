@@ -13,4 +13,4 @@ ENV GOCACHE=/home/mmnuria/.cache/go
 
 USER mmnuria
 
-CMD just test
+ENTRYPOINT just test
