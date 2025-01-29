@@ -1,0 +1,17 @@
+version: v1.0
+
+name: Go
+
+agent:
+  machine:
+    type: f1-standard-2
+
+blocks:
+  - name: Test-go
+    task:
+      jobs:
+        - name: Run tests
+          commands:
+            - checkout
+            - docker pull mmnuria/personalsportcalendary
+            - docker run -v `pwd`:/app/test -t mmnuria/personalsportcalendary
