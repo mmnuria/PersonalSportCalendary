@@ -67,6 +67,9 @@ docker run -t -u 1001 -v `pwd`:/app/test mmnuria/personalsportcalendary:latest
 
 ```
 
+## Integración continua
+Se ha seleccionado la herramienta **GitHub Actions** como CI del proyecto. Para más información se puede consultar el siguiente [documento](./docs/continuous-integration.md)
+
 ## Información de la licencia:
 
 [Licencia](./LICENSE)

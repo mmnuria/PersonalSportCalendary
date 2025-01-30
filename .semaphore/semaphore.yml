@@ -1,0 +1,24 @@
+version: v1.0
+
+name: Go
+
+agent:
+  machine:
+    type: f1-standard-2
+
+blocks:
+  - name: Setup and Test
+    task:
+      prologue:
+        commands:
+          - checkout --use-cache=false --fetch-depth=0
+          - wget https://go.dev/dl/go1.23.linux-amd64.tar.gz
+          - sudo tar -C /usr/local -xzf go1.23.linux-amd64.tar.gz
+          - export PATH=$PATH:/usr/local/go/bin
+          - go version
+          - sudo apt update && sudo apt install -y snapd
+          - sudo snap install just --classic
+      jobs:
+        - name: Run tests
+          commands:
+            - just test
