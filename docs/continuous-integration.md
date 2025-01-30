@@ -1,12 +1,12 @@
-## Requisitos de elección 
+##  Requisitos de elección 
 
-1. La herramienta debe de ser gratis o al menos porporcionar algunas opciones gratuitas.
+1.  La herramienta debe de ser gratis o al menos porporcionar algunas opciones gratuitas.
+
 
 ## Opciones disponibles 
 **Circle CI**:    
     Plan gratuito con un límite de 6000 minutos mensuales. Se conecta al repositorio de GitHub mediante una cuenta en su plataforma.
     [Documentación oficial](https://circleci.com/)
-
 **Semaphore CI**:    
     Plan gratuito con un límite de 7000 minutos mensuales. Integración disponible mediante inicio de sesión con GitHub.
     [Documentación oficial](https://semaphoreci.com/)   
@@ -14,11 +14,9 @@
 **GitHub Actions**:    
     Gratuita para repositorios públicos con límite gratuito de 2000 minutos mensuales para repositorios privados.
     [Documentación oficial](https://github.com/features/actions)
-
 **Travis CI**:
     Gratuito para las primeras 100 builds, luego requiere un pago mínimo de $13.75 al mes. 
     [Documentación oficial](https://www.travis-ci.com/)  
-
 **Appveyor**:    
     Gratuito para proyectos de código abierto con posibilidad de pago $29 al mes para repositorios privados. Integración con GitHub disponible mediante configuración en su plataforma. 
     [Documentación oficial](https://www.appveyor.com/)
