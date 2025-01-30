@@ -1,7 +1,6 @@
 ## Requisitos de elección 
 
 1. La herramienta debe de ser gratis o al menos porporcionar algunas opciones gratuitas.
-2. Debe considerarse (en caso de que lo hubiera) que la herramienta sea nativa con GitHub. 
 
 ## Opciones disponibles 
 **Circle CI**:    
@@ -19,10 +18,6 @@
 **Travis CI**:
     Gratuito para las primeras 100 builds, luego requiere un pago mínimo de $13.75 al mes. 
     [Documentación oficial](https://www.travis-ci.com/)  
-
-**Jenkins**:    
-    Software de automatización de código abierto, completamente gratuito. Aunque no es nativo de GitHub, ofrece integraciones mediante *webhooks* y plugins para conectar con GitHub. Requiere configuración en un servidor propio o en un servicio de alojamiento en la nube.  
-    [Documentación oficial](https://www.jenkins.io/doc/)
 
 **Appveyor**:    
     Gratuito para proyectos de código abierto con posibilidad de pago $29 al mes para repositorios privados. Integración con GitHub disponible mediante configuración en su plataforma. 
@@ -49,6 +44,5 @@ Para configurar algunas pruebas de las herramientas anteriores, se han tenido qu
 
 ### Conclusión
 
-Se elige **GitHub Actions** como la herramienta principal, ya que:  
-- Es la solución nativa de GitHub.  
-- Cumple con el criterio inicial de ser gratuita.
+Se elige **CircleCI** como la herramienta principal, ya que:
+- Cumple con el criterio inicial de ser gratuita con un límite, aun así, sería suficiente para el proyecto.
