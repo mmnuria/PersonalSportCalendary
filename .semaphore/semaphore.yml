@@ -1,0 +1,21 @@
+version: v1.0
+
+name: Go
+
+agent:
+  machine:
+    type: f1-standard-2
+
+blocks:
+  - name: Setup and Test
+    task:
+      prologue:
+        commands:
+          - checkout
+          - sem-version go 1.23
+          - sudo apt update && sudo apt install -y snapd
+          - sudo snap install just --classic
+      jobs:
+        - name: Run tests
+          commands:
+            - just test

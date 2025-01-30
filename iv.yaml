@@ -5,3 +5,4 @@ automatizar:
   orden: just
 test:
   - internal/generador_test.go
+CI: .github/workflows/continuous-integration.md
