@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  test-go:
+    docker:
+      - image: mmnuria/personalsportcalendary
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: just test
+
+workflows:
+  continuous-integration:
+    jobs:
+      - test-go
