@@ -23,7 +23,7 @@ Un test runner que proporciona resúmenes detallados y legibles de los resultado
 
 Se ha optado por utilizar el framework de pruebas de Go (`testing`) debido a:
 
-1. Es el estándar del lenguaje.
+1. Es de la librería estándar del lenguaje.
 2. Actualizaciones regulares y mantenimiento constante.
 
 **goblin** y **gotestsum** no han sido recientemente actualizadas y respecto a **Ginkgo**, se considera una opción válida para proyectos que requieran un enfoque BDD, pero no es necesario para la mayoría de los proyectos Go que se benefician del marco de pruebas básico (como es el caso de este proyecto) proporcionado por `testing`.
