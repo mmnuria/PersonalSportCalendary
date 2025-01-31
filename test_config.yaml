@@ -1,0 +1,4 @@
+log:
+  level: "info"
+  logfile: "app.log"  
+  encoding: "console"

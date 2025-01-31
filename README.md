@@ -39,3 +39,43 @@ De las diferentes tareas una de la más necesarias es la comprobación de la sin
 ```
 just check
 ```
+
+## [Biblioteca de aserciones](./docs/biblioteca_asersiones.md)
+
+## [Test runner](./docs/test_runner.md)
+
+Para ejecutar los tets:
+
+```
+just test
+```
+
+## Docker
+La imagen a usar se puede encontrar explicada en el [archivo](/docs/imagen-docker.md).
+
+1. Ejecución y montaje local:
+```
+docker build -t [nombre] .
+```
+```
+docker run -t -u 1001 -v `pwd`:/app/test [nombre]
+```
+
+2. Ejecución Docker:
+```
+docker run -t -u 1001 -v `pwd`:/app/test mmnuria/personalsportcalendary:latest
+
+```
+
+## Integración continua
+Se ha seleccionado la herramienta **GitHub Actions** como CI del proyecto. Para más información se puede consultar el siguiente [documento](./docs/continuous-integration.md)
+
+## Herramienta de configuración:
+La herramienta seleccionada ha sido `Viper`. Obtener más información [aquí](./docs/configuracion.md)
+
+## Herramienta de registro de actividad:
+La herramienta seleccionada ha sido `Zap`. Obtener más información [aquí](./docs/logs.md)
+
+## Información de la licencia:
+
+[Licencia](./LICENSE)

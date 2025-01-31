@@ -2,25 +2,41 @@ package PersonalSportCalendary
 
 import "fmt"
 
-// ListaEjecicios guarda el conjunto de ejercicios que un usuario puede realizar.
 var ListaEjercicios []Ejercicio
 
-// Ejercicio representa un ejercicio que un usuario puede realizar.
-// - Nombre: Nombre del ejercicio.
-// - Descripcion: Descripción detallada del ejercicio.
-// - MinsEstimados: Tiempo estimado en minutos para realizar el ejercicio (máximo 1440, un día).
-// - ClaseEjercicio: Clase de ejercicio a realizar entre: Flexibilidad, Fuerza, Cardiovasculares, Calentamiento, Estiramiento.
-// - Intensidad: Intensidad del ejercicio entre: Baja, Media, Alta.
+const (
+	ClaseFlexibilidad  = "Flexibilidad"
+	ClaseFuerza        = "Fuerza"
+	ClaseCardio        = "Cardiovasculares"
+	ClaseCalentamiento = "Calentamiento"
+	ClaseEstiramiento  = "Estiramiento"
+)
+
+const (
+	IntensidadBaja  = "Baja"
+	IntensidadMedia = "Media"
+	IntensidadAlta  = "Alta"
+)
+
 type Ejercicio struct {
 	Nombre         string
 	Descripcion    string
 	MinsEstimados  uint
 	ClaseEjercicio string
 	Intensidad     string
+	Materiales     []string
 }
 
-// NewEjercicio crea una nueva instancia de Ejercicio.
-func NewEjercicio(nombre string, descripcion string, minsEstimados uint, claseEjercicio string, intensidad string) (Ejercicio, error) {
+func init() {
+	ListaEjercicios = []Ejercicio{
+		{"Calentamiento", "Estiramiento general de extremidades", 5, ClaseCalentamiento, IntensidadBaja, []string{}},
+		{"Saltos", "Saltos en el lugar", 5, ClaseCardio, IntensidadMedia, []string{}},
+		{"Flexiones", "Flexiones estándar", 10, ClaseFuerza, IntensidadAlta, []string{}},
+		{"Estiramientos", "Estiramiento básico de brazos", 5, ClaseEstiramiento, IntensidadBaja, []string{}},
+	}
+}
+
+func NewEjercicio(nombre string, descripcion string, minsEstimados uint, claseEjercicio string, intensidad string, materiales []string) (Ejercicio, error) {
 	if minsEstimados <= 0 || minsEstimados > 1440 {
 		return Ejercicio{}, fmt.Errorf("el tiempo debe estar entre 1 y 1440 minutos, recibido: %d", minsEstimados)
 	}
@@ -42,5 +58,6 @@ func NewEjercicio(nombre string, descripcion string, minsEstimados uint, claseEj
 		MinsEstimados:  minsEstimados,
 		ClaseEjercicio: claseEjercicio,
 		Intensidad:     intensidad,
+		Materiales:     materiales,
 	}, nil
 }

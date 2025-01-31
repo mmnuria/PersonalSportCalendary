@@ -1,0 +1,8 @@
+app:
+  name: "PersonalSportCalendary"
+  env: "development"
+
+log:
+  level: "debug"          
+  logfile: "/tmp/personal_sport_calendary.log"  
+  encoding: "json"      

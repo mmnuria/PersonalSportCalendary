@@ -3,3 +3,7 @@ entidad: /internal/plan-semanal.go
 automatizar:
   fichero: justfile
   orden: just
+test:
+  - internal/generador_test.go
+CI: .github/workflows/continuous-integration.md
+configuracion: config.yaml
