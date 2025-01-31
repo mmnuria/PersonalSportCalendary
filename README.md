@@ -43,6 +43,7 @@ just check
 ## [Biblioteca de aserciones](./docs/biblioteca_asersiones.md)
 
 ## [Test runner](./docs/test_runner.md)
+En este archivo se puede comprobar el porqué se ha seleccionado el framework de pruebas de Go (`testing`) como test-runner del proyecto. Además, podemos usar la herramienta CLI para ejecutar los test usando el comando `go test`
 
 Para ejecutar los tets:
 

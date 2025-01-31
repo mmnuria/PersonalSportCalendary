@@ -3,7 +3,7 @@
 
 # Opciones de la biblioteca de aserciones
 
-**GoCheck**: Aunque GoCheck ofrece funcionalidades útiles, su falta de actualizaciones durante cinco años genera una alta deuda técnica. Por esta razón, no se considera una opción viable para el proyecto. En Snyk Advisor no aparece un análisis al respecto.
+**GoCheck**: La falta de actualizaciones en GoCheck desde hace cinco años genera una alta deuda técnica. Por esta razón, no se considera una opción viable para el proyecto. En Snyk Advisor no aparece un análisis al respecto.
 [Documentación oficial](https://github.com/go-check/check)
 
 **Gomega**: Gomega es una biblioteca robusta y actualizada que proporciona amplias funcionalidades para pruebas. Aparece como [_Healthy_](https://snyk.io/advisor/golang/github.com/onsi/gomega) en el apartado de mantenimiento de Snyk Advisor.
