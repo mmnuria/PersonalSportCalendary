@@ -3,8 +3,7 @@ name: Docker Build and Push
 on:
   push:
     paths:
-    -  'Dockerfile'
-    - 'go.mod'
+    - 'Dockerfile'
     - 'justfile'
 
 jobs:
