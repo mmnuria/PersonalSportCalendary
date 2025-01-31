@@ -73,6 +73,8 @@ Se ha seleccionado la herramienta **GitHub Actions** como CI del proyecto. Para 
 ## Herramienta de configuración:
 La herramienta seleccionada ha sido `Viper`. Obtener más información [aquí](./docs/configuracion.md)
 
+## Herramienta de registro de actividad:
+La herramienta seleccionada ha sido `Zap`. Obtener más información [aquí](./docs/logs.md)
 
 ## Información de la licencia:
 
