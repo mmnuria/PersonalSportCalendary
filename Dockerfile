@@ -4,13 +4,13 @@ RUN apk add --no-cache just
 
 WORKDIR /app/test
 
-RUN adduser -D -h /home/mmnuria mmnuria
+RUN adduser -D -h /home/personalsportcalendary personalsportcalendary
 
-RUN mkdir -p /home/mmnuria/.cache/go && \
-    chmod -R a+w /home/mmnuria/.cache/
+RUN mkdir -p /home/personalsportcalendary/.cache/go && \
+    chmod -R a+w /home/personalsportcalendary/.cache/
 
-ENV GOCACHE=/home/mmnuria/.cache/go
+ENV GOCACHE=/home/personalsportcalendary/.cache/go
 
-USER mmnuria
+USER personalsportcalendary
 
 ENTRYPOINT just test
