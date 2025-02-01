@@ -39,3 +39,18 @@ De las diferentes tareas una de la más necesarias es la comprobación de la sin
 ```
 just check
 ```
+
+## [Biblioteca de aserciones](./docs/biblioteca_asersiones.md)
+
+## [Test runner](./docs/test_runner.md)
+En este archivo se puede comprobar el porqué se ha seleccionado el framework de pruebas de Go (`testing`) como test-runner del proyecto. Además, podemos usar la herramienta CLI para ejecutar los test usando el comando `go test`
+
+Para ejecutar los tets:
+
+```
+just test
+```
+
+## Información de la licencia:
+
+[Licencia](./LICENSE)
