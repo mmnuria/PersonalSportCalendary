@@ -5,7 +5,7 @@
 # Posibles opciones
 
 ## **Go testing framework**   
-El paquete `testing` es el marco de pruebas por defecto en Go, adecuado para proyectos pequeños o medianos. Todas las pruebas en Go, independientemente de la biblioteca utilizada, se ejecutan con el comando `go test`, lo que garantiza integración y compatibilidad con el ecosistema del lenguaje.  
+El paquete `testing` es el marco de pruebas por defecto en Go y forma parte de la biblioteca estándar. Es adecuado para proyectos pequeños o medianos y recibe mantenimiento directamente del equipo de desarrollo de Go.
 
 ## **Ginkgo**  
 Ginkgo es un test runner basado en BDD (Behavior Driven Development) que ofrece una mayor flexibilidad y funcionalidad avanzada para proyectos más complejos. Es adecuado para aquellos que necesitan un enfoque más estructurado y detallado en sus pruebas. Sin embargo, para proyectos sencillos, la complejidad adicional de Ginkgo puede no ser necesaria.
