@@ -3,8 +3,8 @@ name: Docker Build and Push
 on:
   push:
     paths:
-    - 'Dockerfile'
     - 'justfile'
+    - 'Dockerfile'
 
 jobs:
   build-and-push:
